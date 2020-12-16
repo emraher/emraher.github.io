@@ -49,9 +49,9 @@ d-byline {
 
 /*-- ARTICLE APPENDIX --*/
 d-appendix {
-  --heading-size:    15px;
+  --heading-size:    12px;
   --heading-color:   rgba(0, 0, 0, 0.65);
-  --text-size:       1.075rem;                   /* edited */
+  --text-size: 11px;
   --text-color:      rgb(0, 0, 0);               /* edited */
 }
 
