@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .distill-site-header .logo img{
-  max-height: 40px; /* Makes logo bigger, default was 20px */
+  max-height: 60px; /* Makes logo bigger, default was 20px */
 }
 
 .distill-site-header .nav-left {
