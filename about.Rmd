@@ -1,0 +1,29 @@
+---
+title: "About Me"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, fig.align='center', out.width = "200px"}
+knitr::include_graphics("images/logo.png")
+```
+
+You can find my CV [here](). 
+
+* **B.A. in Economics** [Anadolu University](), Eskişehir, TURKEY
+* **M.A. in Economics** [Ankara University](), Ankara, TURKEY
+* **Masters in Economics** [North Carolina State University](), Raleigh, NC, USA
+* **Ph.D. in Agricultural Economics** [Kansas State University](), Manhattan, KS, USA
+
+I am a Research Assistant at [Ankara University Economics Department](http://www.politics.ankara.edu.tr/iktisat/). I teach undergraduate statistics and data science courses. 
+
+My research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics. I am a member of [DigitalLab Mulkiye](https://www.dlabmulkiye-en.org/). I like coding in R and writing useless R packages.
+
+I live in Ankara with my wife and our 4 cats (Badem, Alfred, Frida, and Duman).
+
+
+```{r, fig.align='center', out.width = "200px"}
+# knitr::include_graphics("images/cats.png")
+```

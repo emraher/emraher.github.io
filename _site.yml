@@ -1,0 +1,37 @@
+name: "eremrah.com"
+title: ""
+description: |
+  Emrah Er
+output_dir: "."
+theme: theme.css
+navbar:
+  logo:
+    image: images/logo.png
+    href: https://eremrah.com
+  search: false
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Courses"
+      href: courses.html
+    - text: "Eviews"
+      href: eviews.html
+    - text: "Fountain Pens"
+      href: fp.html
+    - text: "About"
+      href: about.html
+    - icon: fa fa-github
+      href: https://github.com/emraher
+    - icon: fa fa-twitter
+      href: https://twitter.com/emrah_er
+    - icon: fa fa-rss
+      href: index.xml
+output:
+  distill::distill_article:
+    includes:
+      in_header: utterances.html
+base_url: https://eremrah.com
+repository_url: https://www.github.com/emraher/myblog
+favicon: images/logo.png
+twitter:
+  site: "@emrah_er"
