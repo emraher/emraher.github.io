@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>https://eremrah.com/about.html</loc>
+    <lastmod>2020-12-16T03:06:41+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://eremrah.com/courses.html</loc>
+    <lastmod>2020-12-16T04:08:14+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://eremrah.com/eviews.html</loc>
+    <lastmod>2020-12-16T02:34:53+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://eremrah.com/fp.html</loc>
+    <lastmod>2020-12-16T02:04:39+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://eremrah.com/</loc>
+    <lastmod>2020-12-16T23:13:29+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://eremrah.com/posts/welcome/</loc>
+    <lastmod>2020-12-16T23:18:39+03:00</lastmod>
+  </url>
+</urlset>

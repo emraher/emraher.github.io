@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About Me",
+      "author": [],
+      "contents": "\n\n\n\nYou can find my CV here.\nB.A. in Economics Anadolu University, Eskişehir, TURKEY\nM.A. in Economics Ankara University, Ankara, TURKEY\nMasters in Economics North Carolina State University, Raleigh, NC, USA\nPh.D. in Agricultural Economics Kansas State University, Manhattan, KS, USA\nI am a Research Assistant at Ankara University Economics Department. I teach undergraduate statistics and data science courses.\nMy research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics. I am a member of DigitalLab Mulkiye. I like coding in R and writing useless R packages.\nI live in Ankara with my wife and our 4 cats (Badem, Alfred, Frida, and Duman).\n\n\n\n\n\n\n",
+      "last_modified": "2020-12-16T23:19:02+03:00"
+    },
+    {
+      "path": "courses.html",
+      "title": "Courses",
+      "author": [],
+      "contents": "\nIKT0203 - İstatistik I\nIKT0208 - İstatistik II\nPEC205 - Statistics for Social Sciences\nPEC206 - Introduction to Data Science\n\n\n\n",
+      "last_modified": "2020-12-16T23:19:02+03:00"
+    },
+    {
+      "path": "eviews.html",
+      "title": "Eviews Ders Notları",
+      "author": [],
+      "contents": "\nBu kılavuz “A Guide to Using EViews with Using Econometrics: A Practical Guide” temel alınarak hazırlanmıştır.\n1. Bölüm: Giriş\n2. Bölüm: Regresyon Analizi\nHTWT1.xls\nhelp1.wf1\nhtwt1.wf1\n3. Bölüm: En Küçük Kareler\nBeef2.xls\nTable 3.8.txt\nbeef2.WF1\nhtwt1.wf1\n4. Bölüm: Regresyon Analizini Kullanmayı Öğrenme\nWoody3.wf1\nWoody3.xls\n5. Bölüm: Temel İstatistikler ve Hipotez Testi\n6. Bölüm: Çoklu Bağıntı\nFish8.wf1\nFish8.xls\n7. Bölüm: Ardışık Bağımlılık\nchick6.WF1\nchick6.xls\nDefend9.wf1\nDefend9.xls\nTable 12.4.xls\ntable124.WF1\n8. Bölüm: Değişen Varyans\nGas10.wf1\nGas10.xls\nheter.xls\n9. Bölüm: Model Kurma: Bağımsız Değişken Seçimi\nchick6.WF1\nDRUGS5.WF1\nDrugs5.xls\ntable62.wf1\ntable76.wf1\ntable132.wf1\nTable 6.2.xls\nTable 7.6.xls\nTable 13.2.xls\n10. Bölüm: Model Kurma: Fonksiyonel Form Seçimi\nchick6.WF1\nDRUGS5.WF1\nTable 12.9.xls\n11. Bölüm: Eşanlı Denklem Sistemleri\nhausman.WF1\nklein.wf1\n11. Bölüm: Eşanlı Denklem Sistemleri (Ek)\nmacro14.xls\nmacro14.WF1\nfultonfish.wf1\n“Fulton Fish Market” Örneği (İngilizce)\nA Simultaneous Equation Model for World Crude Oil and Natural Gas Markets - IMF Working Papers 05/32\nKlein’s Model Tahmin Sonuçları\n12. Bölüm: Diğer Notlar\nheter.xls\nGujarati Otokorelasyon-(Bu dosya kısmen düzensiz olduğundan bazı hatalar bulunabilir)\nDeğişen Varyans Ek\nEndeks Sayıları\n\n\n\n",
+      "last_modified": "2020-12-16T23:19:03+03:00"
+    },
+    {
+      "path": "fp.html",
+      "title": "My Fountain Pens",
+      "author": [],
+      "contents": "\n\n\n{\"x\":{\"filter\":\"none\",\"data\":[[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\",\"21\",\"22\",\"23\",\"24\",\"25\",\"26\",\"27\",\"28\",\"29\",\"30\",\"31\",\"32\",\"33\",\"34\",\"35\",\"36\",\"37\",\"38\",\"39\",\"40\",\"41\",\"42\",\"43\",\"44\",\"45\",\"46\",\"47\",\"48\",\"49\",\"50\",\"51\",\"52\",\"53\",\"54\",\"55\",\"56\",\"57\",\"58\",\"59\",\"60\",\"61\",\"62\",\"63\",\"64\"],[\"Delta\",\"Edison Pen Co.\",\"Edison Pen Co.\",\"Franklin Christoph\",\"Franklin Christoph\",\"Hero\",\"Hero\",\"Hero\",\"Hero\",\"Hero\",\"Jinhao\",\"Jinhao\",\"Kaigelu\",\"Kaigelu\",\"Karaskustoms\",\"Kaweco\",\"Kaweco\",\"Kaweco\",\"Kaweco\",\"Kaweco\",\"Lamy\",\"Lamy\",\"Lamy\",\"Lamy\",\"Lamy\",\"Montblanc\",\"Nakaya\",\"Namiki\",\"Nemosine\",\"Noodler's\",\"Noodler's\",\"Noodler's\",\"Parker\",\"Parker\",\"Pelikan\",\"Pelikan\",\"Pelikan\",\"Pelikan\",\"Pelikan\",\"Pelikan\",\"Pilot\",\"Pilot\",\"Pilot\",\"Pilot\",\"Pilot\",\"Pilot\",\"Pilot\",\"Pilot\",\"Platinum\",\"Platinum\",\"PSP\",\"Sailor\",\"Sailor\",\"Scrikss\",\"Scriptorium Pens\",\"Serwex\",\"Sheaffer\",\"TWSBI\",\"TWSBI\",\"TWSBI\",\"TWSBI\",\"TWSBI\",\"Visconti\",\"Waterman\"],[\"Dolce Vita\",\"Collier\",\"Glenmont\",\"Model 19\",\"Model 02\",\"#59\",\"329\",\"360\",\"616\",\"616\",\"X450\",\"X750\",\"316\",\"336\",\"Ink\",\"AL Sport\",\"AL Sport Stonewashed\",\"Classic Sport\",\"Ice Sport\",\"Ice Sport\",\"2000\",\"2000\",\"Joy Calligraphy\",\"Safari\",\"Studio -\",\"Meisterstück 146\",\"Naka-ai\",\"Falcon\",\"Singularity\",\"Konrad Flex\",\"Neponset\",\"Nib Creaper\",\"51\",\"Duofold Senior\",\"140\",\"140\",\"M205\",\"M400\",\"M400\",\"M800\",\"78G\",\"Kakuno\",\"Metropolitan\",\"Parallel Calligraphy\",\"Penmanship\",\"Plumix\",\"Prera\",\"Vanishing Point\",\"3776 Century\",\"Kanazawa Leaf Maki-e\",\"Soquel\",\"1911\",\"Clear Candy\",\"419\",\"Custom\",\"1362\",\"Imperial Cartridge\",\"Diamond 580\",\"Micarta\",\"Mini\",\"Mini\",\"Vac 700\",\"Homo-Sapiens\",\"52 1/2V\"],[\"Mid-Size\",\"Persimmon Swirl\",\"2014 LEE 16/108\",\"\",\"\",\"Silver\",\"Older Version with Gold Cap Red\",\"Light Blue\",\"Black\",\"Green\",\"Black Marble\",\"Frosted Black\",\"Frosted Black\",\"White\",\"Aluminum\",\"Raw Aluminum Body\",\"Black Body\",\"Black Body\",\"Red Body\",\"Yellow Body\",\"\",\"\",\"Black Body\",\"Charcoal\",\"Royal Red Body\",\"90th Anniversary\",\"Heki Tamenuri\",\"Metal\",\"\",\"Metal\",\"Walnut Ebonite Ripple\",\"Walnut Ebonite Ripple\",\"Aerometric Demi Forest Green\",\"Big Red\",\"\",\"\",\"Traditional Red Body\",\"Red Stripe\",\"Tortoiseshell White\",\"Tortoiseshell Brown\",\"4 of each\",\"Blue\",\"Animal Collection - White Tiger\",\"\",\"Black Body\",\"Light Blue Body\",\"Clear Body Clear Light Green Accent\",\"Black Matte\",\"Nice\",\"Goldfish\",\"Ebonite Aerometric F., Matte Black\",\"\",\"Milk\",\"Burgundy\",\"\",\"?\",\"Burgundy\",\"Black with Rose Gold\",\"\",\"\",\"White with Rose Gold\",\"Blue\",\"Midi\",\"Ring-Top\"],[\"EF\",\"EF\",\"EF\",\"Masuyama - .3mm CI\",\"Masuyama - Needlepoint\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"EF\",\"EF\",\"EF\",\"Twin\",\"EF\",\"BB\",\"Masuyama - Needlepoint\",\"OBB\",\"1.5mm\",\"EF\",\"M\",\"Masuyama - .3mm CI\",\"Mottishaw - .3mm CI\",\"Mottishaw - Spencerian\",\".6mm S\",\"Flex\",\"Music Flex\",\"Flex\",\"F\",\"F Flex\",\"EF\",\"F\",\"EF\",\"Binder - .3mm CI LO\",\"Mottishaw - .3mm CI\",\"IB\",\"F-M-B-BB\",\"F\",\"F\",\"2.4mm\",\"EF\",\"MI\",\"F\",\"F\",\"F\",\"F\",\"F Flex\",\"EF\",\"MF\",\"\",\"EF\",\"\",\"M\",\"M\",\"Pendleton - .4mm CI Flex\",\"1.1mm S\",\"B\",\"EF\",\"Mottishaw - .3mm CI\",\"Flex\"]],\"container\":\"<table class=\\\"display\\\">\\n  <thead>\\n    <tr>\\n      <th> <\\/th>\\n      <th>Manufacturer<\\/th>\\n      <th>Model<\\/th>\\n      <th>Details<\\/th>\\n      <th>Nib<\\/th>\\n    <\\/tr>\\n  <\\/thead>\\n<\\/table>\",\"options\":{\"order\":[],\"autoWidth\":false,\"orderClasses\":false,\"columnDefs\":[{\"orderable\":false,\"targets\":0}]}},\"evals\":[],\"jsHooks\":[]}\n\n\n\n",
+      "last_modified": "2020-12-16T23:19:03+03:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Latest Posts",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-16T23:19:04+03:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
