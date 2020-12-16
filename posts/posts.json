@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "path": "posts/2020-12-16-distill/",
+    "title": "Distill",
+    "description": {},
+    "author": [
+      {
+        "name": "Emrah Er",
+        "url": {}
+      }
+    ],
+    "date": "2020-12-16",
+    "categories": [],
+    "contents": "\nI started using Distill. I haven’t moved old content yet.\nDistill is a publication format for scientific and technical writing, native to the web. Learn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-16T20:09:39+03:00",
+    "input_file": "distill.utf8.md"
+  }
+]
