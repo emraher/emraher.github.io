@@ -1,17 +1,9 @@
-name: "eremrah.com"
+name: "Emrah Er"
 title: ""
 description: |
-  Emrah Er
-output_dir: "."
+  emraher
+output_dir: "docs"
 theme: theme.css
-rss:
-  full_content: true
-collections:
-  posts:
-    feed_items_max: 50
-    categories: false
-    categories_metadata: false
-    authors_metadata: false
 navbar:
   logo:
     image: images/logo.png

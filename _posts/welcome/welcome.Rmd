@@ -1,7 +1,8 @@
 ---
-title: "Distill"
-author:
-  - name: Emrah Er
+title: "Welcome"
+description: |
+  Hello Distill!
+author: "Emrah Er"
 date: 12-16-2020
 output:
   distill::distill_article:
