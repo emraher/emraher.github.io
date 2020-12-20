@@ -1,5 +1,5 @@
 name: "Emrah Er"
-title: ""
+title: "emraher"
 description: |
   emraher
 output_dir: "docs"
@@ -20,7 +20,7 @@ navbar:
       href: fp.html
     - text: "About"
       href: about.html
-    - icon: fa fa-github
+    - icon: fab fa-github
       href: https://github.com/emraher
     - icon: fa fa-twitter
       href: https://twitter.com/emrah_er

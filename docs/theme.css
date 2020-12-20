@@ -109,3 +109,9 @@ ul > li::marker {
     font-weight: 700;
     font-size: 1.125em;
 }
+
+
+/* hide title in main page */
+.distill-site-header .title {
+    display: none;
+}
