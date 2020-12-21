@@ -6,7 +6,7 @@ title: "Courses"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### [IKT0203 - İstatistik I](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914116&bno=4303&bot=1923)
-### [IKT0208 - İstatistik II](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914124&bno=4303&bot=1923)
+<!-- ### [IKT0203 - İstatistik I](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914116&bno=4303&bot=1923) -->
+<!-- ### [IKT0208 - İstatistik II](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914124&bno=4303&bot=1923) -->
 ### [PEC205 - Statistics for Social Sciences](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915372&bno=4328&bot=1955)
 ### [PEC206 - Introduction to Data Science](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915382&bno=4328&bot=1955)
