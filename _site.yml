@@ -16,6 +16,8 @@ navbar:
       href: courses.html
     - text: "Eviews"
       href: eviews.html
+    - text: "R Packages"
+      href: software.html
     - text: "Fountain Pens"
       href: fp.html
     - text: "About"
