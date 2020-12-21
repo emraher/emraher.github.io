@@ -14,10 +14,10 @@ navbar:
       href: index.html
     - text: "Courses"
       href: courses.html
-    - text: "Eviews"
-      href: eviews.html
     - text: "R Packages"
       href: software.html
+    - text: "Eviews"
+      href: eviews.html
     - text: "Fountain Pens"
       href: fp.html
     - text: "About"
