@@ -47,6 +47,7 @@ Here is a list of software I use.
 * Firefox Developer Edition
 * Google Chrome
 * Hammerspoon
+* Hazel
 * Helium
 * iStat Menus
 * iTerm
