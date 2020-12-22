@@ -1,0 +1,117 @@
+---
+title: "usesthis"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+I like reading interviews on [usesthis](https://usesthis.com/). From time to time my friends and colleagues also ask me what hardware and software I use. Here I tried to list them.
+
+### Hardware
+* [MacBook Pro (15-inch, 2018) 2.9 GHz 6-Core Intel Core i9 32 GB 2400 MHz DDR4](https://support.apple.com/kb/SP776?locale=en_US)
+* [Lenovo Thinkpad T420](https://support.apple.com/kb/SP762?locale=en_US)
+* [Dell P2314H](https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS)
+* 2 [Dell U2414H](https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG/ref=sr_1_2?dchild=1&keywords=Dell+U2414H&qid=1608621330&s=electronics&sr=1-2)
+* [Flexyarm 201 PRO BLACK Monitor Arm](https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu)
+* [Flexyarm 201 PRO BLACK LAPTOP Monitor Arm](https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu)
+* [StarTech.com Thunderbolt 3 Dock](https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw)
+* [Apple Magic Keyboard](https://www.apple.com/tr/shop/product/MLA22TQ/A/magic-keyboard-t%C3%BCrk%C3%A7e-q-klavye?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1)
+* [Apple Magic Trackpad](https://www.apple.com/tr/shop/product/MJ2R2TU/A/magic-trackpad-2-g%C3%BCm%C3%BC%C5%9F-rengi?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1)
+* [OLKB Planck Keyboard](https://olkb.com/collections/planck)
+* [Logitech M570 Wireless Trackball Mouse](https://www.logitech.com/en-hk/product/wireless-trackball-m570)
+* [WA7 Fireflies Headphone Amplifier / DAC](https://wooaudio.com/amplifiers/wa7)
+* [Sennheiser HD650 Headphones](https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650)
+* [iPad Pro 10.5-inch](https://support.apple.com/kb/SP762?locale=en_US)
+
+### Software
+
+Some of these software are important in my workflow. I tried to put together some scripts in a [Github repo](https://github.com/emraher/workflow). 
+
+[https://alternativeto.net/](https://alternativeto.net/) is a great page to find alternative software. 
+
+You can also find lots of awesome software in [#awesome](https://github.com/topics/awesome). For example, for MacOS [see this](https://github.com/jaywcjlove/awesome-mac) and for Windows [see this](https://github.com/Awesome-Windows/Awesome).
+
+Here is a list of software I use.
+
+* 1Password
+* Alfred
+* AltTab
+* AppCleaner
+* Bartender
+* BetterTouchTool
+* BibDesk
+* BusyCal
+* Cyberduck
+* DEVONthink 3
+* Firefox Developer Edition
+* Google Chrome
+* Hammerspoon
+* Helium
+* iStat Menus
+* iTerm
+* Itsycal
+* Karabiner-Elements
+* Keyboard Maestro
+* KeyCastr
+* Little Snitch
+* MailMate
+* Mathpix Snipping Tool
+* MS Office
+* Moom
+* mpv
+* Path Finder
+* PopClip
+* Postman
+* Presentify
+* QGIS
+* RStudio
+* Skim
+* SpamSieve
+* Spotify
+* Sublime Text
+* Stata
+* Suspicious Package
+* Telegram
+* TeX Live
+* TotalSpaces2
+* Transmission
+* VirtualBox
+* Visual Studio Code
+* Zoom
+* Zotero
+
+### Browser Extensions
+
+#### Firefox (Main Browser)
+* HTTPS Everywhere
+* Imagus
+* Privacy Badger
+* Reddit Enhancement Suite
+* Surfingkeys
+* tema++
+* uBlacklist
+* uBlock Origin
+* Zotero Connector
+
+#### Google Chrome
+
+* 1Password
+* Allow Right-Click
+* BibTeX entry from URL
+* BlockSite
+* Chrono Download Manager
+* Clip to DEVONthink
+* HTTPS Everywhere
+* Imagus
+* JSONView
+* Lovely forks
+* OneTab
+* Postman Interceptor
+* Reddit Enhancement Suite
+* SelectorGadget
+* Surfingkeys
+* tema++
+* uBlock Origin
+
+

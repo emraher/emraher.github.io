@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://eremrah.com/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -86,28 +85,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>emraher: Latest Posts</title>
+  <title>emraher: usesthis</title>
 
 
   <link rel="icon" type="image/png" href="images/logo.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="emraher: Latest Posts"/>
+  <meta property="og:title" content="emraher: usesthis"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="emraher"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="emraher: Latest Posts"/>
+  <meta property="twitter:title" content="emraher: usesthis"/>
   <meta property="twitter:site" content="@emrah_er"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Latest Posts"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["usesthis"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2144,12 +2143,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Latest Posts","authors":[]}
+{"title":"usesthis","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2186,167 +2185,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Latest Posts">Latest Posts</h1>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 16, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Emrah Er</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Welcome</h2>
-<div class="dt-tags"></div>
-<p>Hello Distill!</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Latest Posts</h1>
+<h1>usesthis</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2354,6 +2195,110 @@ function init_posts_list() {
 
 
 <div class="d-article">
+<p>I like reading interviews on <a href="https://usesthis.com/">usesthis</a>. From time to time my friends and colleagues also ask me what hardware and software I use. Here I tried to list them.</p>
+<h3 id="hardware">Hardware</h3>
+<ul>
+<li><a href="https://support.apple.com/kb/SP776?locale=en_US">MacBook Pro (15-inch, 2018) 2.9 GHz 6-Core Intel Core i9 32 GB 2400 MHz DDR4</a></li>
+<li><a href="https://support.apple.com/kb/SP762?locale=en_US">Lenovo Thinkpad T420</a></li>
+<li><a href="https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS">Dell P2314H</a></li>
+<li>2 <a href="https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG/ref=sr_1_2?dchild=1&amp;keywords=Dell+U2414H&amp;qid=1608621330&amp;s=electronics&amp;sr=1-2">Dell U2414H</a></li>
+<li><a href="https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu">Flexyarm 201 PRO BLACK Monitor Arm</a></li>
+<li><a href="https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu">Flexyarm 201 PRO BLACK LAPTOP Monitor Arm</a></li>
+<li><a href="https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw">StarTech.com Thunderbolt 3 Dock</a></li>
+<li><a href="https://www.apple.com/tr/shop/product/MLA22TQ/A/magic-keyboard-t%C3%BCrk%C3%A7e-q-klavye?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple Magic Keyboard</a></li>
+<li><a href="https://www.apple.com/tr/shop/product/MJ2R2TU/A/magic-trackpad-2-g%C3%BCm%C3%BC%C5%9F-rengi?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple Magic Trackpad</a></li>
+<li><a href="https://olkb.com/collections/planck">OLKB Planck Keyboard</a></li>
+<li><a href="https://www.logitech.com/en-hk/product/wireless-trackball-m570">Logitech M570 Wireless Trackball Mouse</a></li>
+<li><a href="https://wooaudio.com/amplifiers/wa7">WA7 Fireflies Headphone Amplifier / DAC</a></li>
+<li><a href="https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650">Sennheiser HD650 Headphones</a></li>
+<li><a href="https://support.apple.com/kb/SP762?locale=en_US">iPad Pro 10.5-inch</a></li>
+</ul>
+<h3 id="software">Software</h3>
+<p>Some of these software are important in my workflow. I tried to put together some scripts in a <a href="https://github.com/emraher/workflow">Github repo</a>.</p>
+<p><a href="https://alternativeto.net/">https://alternativeto.net/</a> is a great page to find alternative software.</p>
+<p>You can also find lots of awesome software in <a href="https://github.com/topics/awesome">#awesome</a>. For example, for MacOS <a href="https://github.com/jaywcjlove/awesome-mac">see this</a> and for Windows <a href="https://github.com/Awesome-Windows/Awesome">see this</a>.</p>
+<p>Here is a list of software I use.</p>
+<ul>
+<li>1Password</li>
+<li>Alfred</li>
+<li>AltTab</li>
+<li>AppCleaner</li>
+<li>Bartender</li>
+<li>BetterTouchTool</li>
+<li>BibDesk</li>
+<li>BusyCal</li>
+<li>Cyberduck</li>
+<li>DEVONthink 3</li>
+<li>Firefox Developer Edition</li>
+<li>Google Chrome</li>
+<li>Hammerspoon</li>
+<li>Helium</li>
+<li>iStat Menus</li>
+<li>iTerm</li>
+<li>Itsycal</li>
+<li>Karabiner-Elements</li>
+<li>Keyboard Maestro</li>
+<li>KeyCastr</li>
+<li>Little Snitch</li>
+<li>MailMate</li>
+<li>Mathpix Snipping Tool</li>
+<li>MS Office</li>
+<li>Moom</li>
+<li>mpv</li>
+<li>Path Finder</li>
+<li>PopClip</li>
+<li>Postman</li>
+<li>Presentify</li>
+<li>QGIS</li>
+<li>RStudio</li>
+<li>Skim</li>
+<li>SpamSieve</li>
+<li>Spotify</li>
+<li>Sublime Text</li>
+<li>Stata</li>
+<li>Suspicious Package</li>
+<li>Telegram</li>
+<li>TeX Live</li>
+<li>TotalSpaces2</li>
+<li>Transmission</li>
+<li>VirtualBox</li>
+<li>Visual Studio Code</li>
+<li>Zoom</li>
+<li>Zotero</li>
+</ul>
+<h3 id="browser-extensions">Browser Extensions</h3>
+<h4 id="firefox-main-browser">Firefox (Main Browser)</h4>
+<ul>
+<li>HTTPS Everywhere</li>
+<li>Imagus</li>
+<li>Privacy Badger</li>
+<li>Reddit Enhancement Suite</li>
+<li>Surfingkeys</li>
+<li>tema++</li>
+<li>uBlacklist</li>
+<li>uBlock Origin</li>
+<li>Zotero Connector</li>
+</ul>
+<h4 id="google-chrome">Google Chrome</h4>
+<ul>
+<li>1Password</li>
+<li>Allow Right-Click</li>
+<li>BibTeX entry from URL</li>
+<li>BlockSite</li>
+<li>Chrono Download Manager</li>
+<li>Clip to DEVONthink</li>
+<li>HTTPS Everywhere</li>
+<li>Imagus</li>
+<li>JSONView</li>
+<li>Lovely forks</li>
+<li>OneTab</li>
+<li>Postman Interceptor</li>
+<li>Reddit Enhancement Suite</li>
+<li>SelectorGadget</li>
+<li>Surfingkeys</li>
+<li>tema++</li>
+<li>uBlock Origin</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

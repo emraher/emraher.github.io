@@ -18,6 +18,8 @@ navbar:
       href: software.html
     - text: "Eviews"
       href: eviews.html
+    - text: "usesthis"
+      href: uses.html
     - text: "Fountain Pens"
       href: fp.html
     - text: "About"
