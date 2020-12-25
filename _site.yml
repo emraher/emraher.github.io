@@ -7,7 +7,7 @@ theme: theme.css
 navbar:
   logo:
     image: images/logo.png
-    href: https://eremrah.com
+    href: http://eremrah.com
   search: false
   right:
     - text: "Home"
@@ -30,7 +30,8 @@ navbar:
       href: https://twitter.com/emrah_er
     - icon: fa fa-rss
       href: index.xml
-base_url: https://eremrah.com
+base_url: http://eremrah.com
+google_analytics: "UA-56648030-1"
 repository_url: https://www.github.com/emraher/emraher.github.io
 favicon: images/logo.png
 twitter:
