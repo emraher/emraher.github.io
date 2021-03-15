@@ -3,7 +3,7 @@
   <channel>
     <title>emraher</title>
     <link>http://eremrah.com</link>
-    <atom:link href="http://eremrah.com/index.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://eremrah.com/posts.xml" rel="self" type="application/rss+xml"/>
     <description>emraher
 </description>
     <image>

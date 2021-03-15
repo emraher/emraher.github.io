@@ -12,6 +12,8 @@ navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "Posts"
+      href: posts.html
     - text: "Courses"
       href: courses.html
     - text: "R Packages"
@@ -22,8 +24,6 @@ navbar:
       href: uses.html
     - text: "Fountain Pens"
       href: fp.html
-    - text: "About"
-      href: about.html
     - icon: fab fa-github
       href: https://github.com/emraher
     - icon: fa fa-twitter

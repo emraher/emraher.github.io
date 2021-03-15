@@ -1,5 +1,33 @@
 ---
-title: "Latest Posts"
+title: "Emrah Er"
+image: "images/logo.png"
+links:
+  - label: GitHub
+    url: "https://github.com/emraher"
+  - label: Twitter
+    url: "https://twitter.com/emrah_er"
+base_url: http://eremrah.com
+preview: images/logo.png
+twitter:
+  creator: "@emrah_er"
 site: distill::distill_website
-listing: posts
+output:
+  postcards::trestles
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+I am a Research Assistant at [Department of Economics, Ankara University  ](http://www.politics.ankara.edu.tr/iktisat/).
+
+I teach undergraduate statistics and data science courses. 
+
+My research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics. I am a member of [DigitalLab Mulkiye](https://www.dlabmulkiye-en.org/). I like coding in R and writing useless R packages.
+
+I live in Ankara with my wife and our 4 cats (Badem, Alfred, Frida, and Duman).
+
+To contact me, send an email to eer[at]eremrah.com. 
+
+You can find my CV [here](). 
