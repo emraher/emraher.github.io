@@ -10,97 +10,33 @@ Bu kılavuz "A Guide to Using EViews with Using Econometrics: A Practical Guide"
 
 ### [1. Bölüm: Giriş](/eviews/1-giris.pdf)
 
-
 ### [2. Bölüm: Regresyon Analizi](/eviews/2-ra.pdf)
-
-*	[HTWT1.xls](/eviews/HTWT1.xls)
-*	[help1.wf1](/eviews/help1.wf1)
-*	[htwt1.wf1](/eviews/htwt1.wf1)
-
 
 ### [3. Bölüm: En Küçük Kareler](/eviews/3-ekk.pdf)
 
-*	[Beef2.xls](/eviews/Beef2.xls)
-*	[Table 3.8.txt](/eviews/Table%203.8.txt)
-*	[beef2.WF1](/eviews/beef2.WF1)
-*	[htwt1.wf1](/eviews/htwt1.wf1)
-
-
 ### [4. Bölüm: Regresyon Analizini Kullanmayı Öğrenme](/eviews/4-rako.pdf)
-
-*	[Woody3.wf1](/eviews/Woody3.wf1)
-*	[Woody3.xls](/eviews/Woody3.xls)
-
 
 ### [5. Bölüm: Temel İstatistikler ve Hipotez Testi](/eviews/5-tivht.pdf)
 
-
-
 ### [6. Bölüm: Çoklu Bağıntı](/eviews/6-cb.pdf)
-
-*	[Fish8.wf1](/eviews/Fish8.wf1)
-*	[Fish8.xls](/eviews/Fish8.xls)
-
-
 
 ### [7. Bölüm: Ardışık Bağımlılık](/eviews/7-ab.pdf)
 
-*	[chick6.WF1](/eviews/chick6.WF1)
-*	[chick6.xls](/eviews/chick6.xls)
-*	[Defend9.wf1](/eviews/Defend9.wf1)
-*	[Defend9.xls](/eviews/Defend9.xls)
-*	[Table 12.4.xls](/eviews/Table 12.4.xls)
-*	[table124.WF1](/eviews/table124.WF1)
-
-
-
 ### [8. Bölüm: Değişen Varyans](/eviews/8-dv.pdf)
-
-*	[Gas10.wf1](/eviews/Gas10.wf1)
-*	[Gas10.xls](/eviews/Gas10.xls)
-*	[heter.xls](/eviews/heter.xls)
-
-
 
 ### [9. Bölüm: Model Kurma: Bağımsız Değişken Seçimi](/eviews/9-mkdbs.pdf)
 
-*	[chick6.WF1](/eviews/chick6.WF1)
-*	[DRUGS5.WF1](/eviews/DRUGS5.WF1)
-*	[Drugs5.xls](/eviews/Drugs5.xls)
-*	[table62.wf1](/eviews/table62.wf1)
-*	[table76.wf1](/eviews/table76.wf1)
-*	[table132.wf1](/eviews/table132.wf1)
-*	[Table 6.2.xls](/eviews/Table 6.2.xls)
-*	[Table 7.6.xls](/eviews/Table 7.6.xls)
-*	[Table 13.2.xls](/eviews/Table 13.2.xls)
-
-
-
 ### [10. Bölüm: Model Kurma: Fonksiyonel Form Seçimi](/eviews/10-mkffs.pdf)
-
-*	[chick6.WF1](/eviews/chick6.WF1)
-*	[DRUGS5.WF1](/eviews/CARS7.WF1)
-*	[Table 12.9.xls](/eviews/Table%2012.9.xls)
-
-
 
 ### 11. Bölüm: Eşanlı Denklem Sistemleri
 
-*	[hausman.WF1](/eviews/hausman.WF1)
-*	[klein.wf1](/eviews/klein.wf1)
-
-
 ### [11. Bölüm: Eşanlı Denklem Sistemleri (Ek)](/eviews/11-eds.pdf)
 
-*	[macro14.xls](/eviews/macro14.xls)
-*	[macro14.WF1](/eviews/macro14.WF1)
-*	[fultonfish.wf1](/eviews/fultonfish.wf1)
 * ["Fulton Fish Market"](/eviews/fulfish1.pdf) Örneği (İngilizce)
 * [A Simultaneous Equation Model for World Crude Oil and Natural Gas Markets - IMF Working Papers 05/32](http://ideas.repec.org/p/imf/imfwpa/05-32.html)
 * [Klein's Model Tahmin Sonuçları](/eviews/kleinresult.pdf)
 
 ### 12. Bölüm: Diğer Notlar
-*	[heter.xls](/eviews/heter.xls)
 * [Gujarati Otokorelasyon](/eviews/veri-1959.pdf)-(Bu dosya kısmen düzensiz olduğundan bazı hatalar bulunabilir)
 * [Değişen Varyans Ek](/eviews/heter.pdf)
 * [Endeks Sayıları](/eviews/index.pdf)
