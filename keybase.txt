@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/emraher
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://eremrah.com
+  * I am emraher (https://keybase.io/emraher) on keybase.
+  * I have a public key ASCc5koQFQ_6hJ7bYgFFWP3TxyCqSvIMMEYc55a3dvnMdQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209ce64a10150ffa849edb62014558fdd3c720aa4af20c30461ce796b776f9cc750a",
+      "host": "keybase.io",
+      "kid": "01209ce64a10150ffa849edb62014558fdd3c720aa4af20c30461ce796b776f9cc750a",
+      "uid": "3d3159d0c3440d50ad84824f43bc0e19",
+      "username": "emraher"
+    },
+    "merkle_root": {
+      "ctime": 1631625480,
+      "hash": "1f5b4bf0e79e34895379cbb8e5d49dedc626986d57a870838cd14110a650e757311197b0cae13b3e8a6e5181f0c5e6af20b61588c81f5638d941f30bb05e64e1",
+      "hash_meta": "cb038a27f0545753fa80de8cb29300553914241a0970c7dad7ce18958b6d2996",
+      "seqno": 20764848
+    },
+    "service": {
+      "entropy": "DCAj4GY7iQwoG4oNV6mgZ99d",
+      "hostname": "eremrah.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.7.0"
+  },
+  "ctime": 1631625509,
+  "expire_in": 504576000,
+  "prev": "f03c2f37ab6a2aa6923092fecfe5f6944acffc006375b5c9d01cd6ba9f8b478c",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnOZKEBUP+oSe22IBRVj908cgqkryDDBGHOeWt3b5zHUKp3BheWxvYWTESpcCCMQg8DwvN6tqKqaSMJL+z+X2lErP/ABjdbXJ0BzWup+LR4zEIInsd308F+NjGQhChZAc3ret2p8uzSZUeUjb6Vp8pP5tAgHCo3NpZ8RAKrt83KvZh3zYpZU4ahLROLVXcHc8ZQ/6IWslocT/2FcQgE4dH7Mu12nF+fCaiZoIeObV5sjCd3ryQj9cTuybDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIVgsQkVmnnmEf1FZPpWP/SQZu0uiiVaUbk2M+l7Rkawo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/emraher
+
+==================================================================
