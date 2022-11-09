@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>emraher: usesthis</title>
@@ -454,7 +455,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1602,7 +1603,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2122,7 +2126,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2192,17 +2196,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="posts.html">Posts</a>
 <a href="courses.html">Courses</a>
 <a href="software.html">R Packages</a>
 <a href="eviews.html">Eviews</a>
 <a href="uses.html">usesthis</a>
-<a href="fp.html">Fountain Pens</a>
 <a href="https://github.com/emraher">
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
+<a href="https://econtwitter.net/@emraher">
+<i class="fab fa-mastodon" aria-hidden="true"></i>
+</a>
 <a href="https://twitter.com/emrah_er">
 <i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+<a href="https://keybase.io/emraher">
+<i class="fab fa-keybase" aria-hidden="true"></i>
 </a>
 <a href="index.xml">
 <i class="fa fa-rss" aria-hidden="true"></i>
@@ -2224,28 +2232,62 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>I like reading interviews on <a href="https://usesthis.com/">usesthis</a>. From time to time my friends and colleagues also ask me what hardware and software I use. Here I tried to list them.</p>
+<p>I like reading interviews on <a
+href="https://usesthis.com/">usesthis</a>. From time to time my friends
+and colleagues also ask me what hardware and software I use. Here I
+tried to list them.</p>
 <h3 id="hardware">Hardware</h3>
 <ul>
-<li><a href="https://support.apple.com/kb/SP776?locale=en_US">MacBook Pro (15-inch, 2018) 2.9 GHz 6-Core Intel Core i9 32 GB 2400 MHz DDR4</a></li>
-<li><a href="https://support.apple.com/kb/SP762?locale=en_US">Lenovo Thinkpad T420</a></li>
-<li><a href="https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS">Dell P2314H</a></li>
-<li>2 <a href="https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG/ref=sr_1_2?dchild=1&amp;keywords=Dell+U2414H&amp;qid=1608621330&amp;s=electronics&amp;sr=1-2">Dell U2414H</a></li>
-<li><a href="https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu">Flexyarm 201 PRO BLACK Monitor Arm</a></li>
-<li><a href="https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu">Flexyarm 201 PRO BLACK LAPTOP Monitor Arm</a></li>
-<li><a href="https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw">StarTech.com Thunderbolt 3 Dock</a></li>
-<li><a href="https://www.apple.com/tr/shop/product/MLA22TQ/A/magic-keyboard-t%C3%BCrk%C3%A7e-q-klavye?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple Magic Keyboard</a></li>
-<li><a href="https://www.apple.com/tr/shop/product/MJ2R2TU/A/magic-trackpad-2-g%C3%BCm%C3%BC%C5%9F-rengi?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple Magic Trackpad</a></li>
-<li><a href="https://olkb.com/collections/planck">OLKB Planck Keyboard</a></li>
-<li><a href="https://www.logitech.com/en-hk/product/wireless-trackball-m570">Logitech M570 Wireless Trackball Mouse</a></li>
-<li><a href="https://wooaudio.com/amplifiers/wa7">WA7 Fireflies Headphone Amplifier / DAC</a></li>
-<li><a href="https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650">Sennheiser HD650 Headphones</a></li>
-<li><a href="https://support.apple.com/kb/SP762?locale=en_US">iPad Pro 10.5-inch</a></li>
+<li><a href="https://support.apple.com/kb/SP776?locale=en_US">MacBook
+Pro (15-inch, 2018) 2.9 GHz 6-Core Intel Core i9 32 GB 2400 MHz
+DDR4</a></li>
+<li><a href="https://support.apple.com/kb/SP762?locale=en_US">Lenovo
+Thinkpad T420</a></li>
+<li><a
+href="https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS">Dell
+P2314H</a></li>
+<li>2 <a
+href="https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG/ref=sr_1_2?dchild=1&amp;keywords=Dell+U2414H&amp;qid=1608621330&amp;s=electronics&amp;sr=1-2">Dell
+U2414H</a></li>
+<li><a
+href="https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu">Flexyarm
+201 PRO BLACK Monitor Arm</a></li>
+<li><a
+href="https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu">Flexyarm
+201 PRO BLACK LAPTOP Monitor Arm</a></li>
+<li><a
+href="https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw">StarTech.com
+Thunderbolt 3 Dock</a></li>
+<li><a
+href="https://www.apple.com/tr/shop/product/MLA22TQ/A/magic-keyboard-t%C3%BCrk%C3%A7e-q-klavye?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple
+Magic Keyboard</a></li>
+<li><a
+href="https://www.apple.com/tr/shop/product/MJ2R2TU/A/magic-trackpad-2-g%C3%BCm%C3%BC%C5%9F-rengi?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple
+Magic Trackpad</a></li>
+<li><a href="https://olkb.com/collections/planck">OLKB Planck
+Keyboard</a></li>
+<li><a
+href="https://www.logitech.com/en-hk/product/wireless-trackball-m570">Logitech
+M570 Wireless Trackball Mouse</a></li>
+<li><a href="https://wooaudio.com/amplifiers/wa7">WA7 Fireflies
+Headphone Amplifier / DAC</a></li>
+<li><a
+href="https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650">Sennheiser
+HD650 Headphones</a></li>
+<li><a href="https://support.apple.com/kb/SP762?locale=en_US">iPad Pro
+10.5-inch</a></li>
 </ul>
 <h3 id="software">Software</h3>
-<p>Some of these software are important in my workflow. I tried to put together some scripts in a <a href="https://github.com/emraher/workflow">Github repo</a>.</p>
-<p><a href="https://alternativeto.net/">https://alternativeto.net/</a> is a great page to find alternative software.</p>
-<p>You can also find lots of awesome software in <a href="https://github.com/topics/awesome">#awesome</a>. For example, for MacOS <a href="https://github.com/jaywcjlove/awesome-mac">see this</a> and for Windows <a href="https://github.com/Awesome-Windows/Awesome">see this</a>.</p>
+<p>Some of these software are important in my workflow. I tried to put
+together some scripts in a <a
+href="https://github.com/emraher/workflow">Github repo</a>.</p>
+<p><a href="https://alternativeto.net/">https://alternativeto.net/</a>
+is a great page to find alternative software.</p>
+<p>You can also find lots of awesome software in <a
+href="https://github.com/topics/awesome">#awesome</a>. For example, for
+MacOS <a href="https://github.com/jaywcjlove/awesome-mac">see this</a>
+and for Windows <a href="https://github.com/Awesome-Windows/Awesome">see
+this</a>.</p>
 <p>Here is a list of software I use.</p>
 <ul>
 <li>1Password</li>
@@ -2329,7 +2371,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>tema++</li>
 <li>uBlock Origin</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -12,22 +12,22 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Posts"
-      href: posts.html
-    - text: "Courses"
+    - text: "Teaching"
       href: courses.html
-    - text: "R Packages"
+    - text: "R"
       href: software.html
     - text: "Eviews"
       href: eviews.html
     - text: "usesthis"
       href: uses.html
-    - text: "Fountain Pens"
-      href: fp.html
     - icon: fab fa-github
       href: https://github.com/emraher
+    - icon: fab fa-mastodon
+      href: https://econtwitter.net/@emraher
     - icon: fa fa-twitter
       href: https://twitter.com/emrah_er
+    - icon: fab fa-keybase
+      href: https://keybase.io/emraher
     - icon: fa fa-rss
       href: index.xml
 base_url: http://eremrah.com

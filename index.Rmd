@@ -1,13 +1,6 @@
 ---
 title: "Emrah Er"
 image: "images/logo.png"
-links:
-  - label: GitHub
-    url: "https://github.com/emraher"
-  - label: Twitter
-    url: "https://twitter.com/emrah_er"
-  - label: Keybase
-    url: "https://keybase.io/emraher"
 base_url: http://eremrah.com
 preview: images/logo.png
 twitter:
