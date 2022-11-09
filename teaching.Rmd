@@ -1,5 +1,5 @@
 ---
-title: "Courses"
+title: "Teaching"
 ---
 
 ```{r setup, include=FALSE}
