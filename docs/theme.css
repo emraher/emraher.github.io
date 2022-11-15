@@ -115,3 +115,9 @@ ul > li::marker {
 .distill-site-header .title {
     display: none;
 }
+
+/* delete button border */
+.btn-outline-dark {
+  border-color: white;
+}
+

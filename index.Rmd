@@ -6,6 +6,15 @@ preview: images/logo.png
 twitter:
   creator: "@emrah_er"
 site: distill::distill_website
+links:
+  - label: '<i class="fab fa-github fa-lg"></i>'
+    url: "https://github.com/emraher"
+  - label: '<i class="fab fa-mastodon fa-lg"></i>'
+    url: "https://econtwitter.net/\\@emraher"
+  - label: '<i class="fa fa-twitter fa-lg"></i>'
+    url: "https://twitter.com/emrah_er"
+  - label: '<i class="fab fa-keybase fa-lg"></i>'
+    url: "https://keybase.io/emraher"
 output:
   postcards::trestles
 ---
@@ -26,4 +35,5 @@ I live in Ankara with my wife and our 4 cats (Badem, Alfred, Frida, and Duman).
 To contact me, send an email to eer[at]eremrah.com. 
 
 You can find my CV [here](). 
-<a rel="me" href="https://econtwitter.net/@emraher"></a>
+
+<a rel="me" href="https://econtwitter.net/@emraher"> </a>
