@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -527,6 +528,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -768,10 +770,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1603,9 +1601,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1617,6 +1627,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1716,6 +1751,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1738,7 +1775,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2132,7 +2169,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2235,62 +2272,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>I like reading interviews on <a
-href="https://usesthis.com/">usesthis</a>. From time to time my friends
-and colleagues also ask me what hardware and software I use. Here I
-tried to list them.</p>
+<p>I like reading interviews on <a href="https://usesthis.com/">usesthis</a>. From time to time my friends and colleagues also ask me what hardware and software I use. Here I tried to list them.</p>
 <h3 id="hardware">Hardware</h3>
 <ul>
-<li><a href="https://support.apple.com/kb/SP776?locale=en_US">MacBook
-Pro (15-inch, 2018) 2.9 GHz 6-Core Intel Core i9 32 GB 2400 MHz
-DDR4</a></li>
-<li><a href="https://support.apple.com/kb/SP762?locale=en_US">Lenovo
-Thinkpad T420</a></li>
-<li><a
-href="https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS">Dell
-P2314H</a></li>
-<li>2 <a
-href="https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG/ref=sr_1_2?dchild=1&amp;keywords=Dell+U2414H&amp;qid=1608621330&amp;s=electronics&amp;sr=1-2">Dell
-U2414H</a></li>
-<li><a
-href="https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu">Flexyarm
-201 PRO BLACK Monitor Arm</a></li>
-<li><a
-href="https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu">Flexyarm
-201 PRO BLACK LAPTOP Monitor Arm</a></li>
-<li><a
-href="https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw">StarTech.com
-Thunderbolt 3 Dock</a></li>
-<li><a
-href="https://www.apple.com/tr/shop/product/MLA22TQ/A/magic-keyboard-t%C3%BCrk%C3%A7e-q-klavye?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple
-Magic Keyboard</a></li>
-<li><a
-href="https://www.apple.com/tr/shop/product/MJ2R2TU/A/magic-trackpad-2-g%C3%BCm%C3%BC%C5%9F-rengi?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple
-Magic Trackpad</a></li>
-<li><a href="https://olkb.com/collections/planck">OLKB Planck
-Keyboard</a></li>
-<li><a
-href="https://www.logitech.com/en-hk/product/wireless-trackball-m570">Logitech
-M570 Wireless Trackball Mouse</a></li>
-<li><a href="https://wooaudio.com/amplifiers/wa7">WA7 Fireflies
-Headphone Amplifier / DAC</a></li>
-<li><a
-href="https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650">Sennheiser
-HD650 Headphones</a></li>
-<li><a href="https://support.apple.com/kb/SP762?locale=en_US">iPad Pro
-10.5-inch</a></li>
+<li><a href="https://support.apple.com/kb/SP776?locale=en_US">MacBook Pro (15-inch, 2018) 2.9 GHz 6-Core Intel Core i9 32 GB 2400 MHz DDR4</a></li>
+<li><a href="https://support.apple.com/kb/SP762?locale=en_US">Lenovo Thinkpad T420</a></li>
+<li><a href="https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS">Dell P2314H</a></li>
+<li>2 <a href="https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG/ref=sr_1_2?dchild=1&amp;keywords=Dell+U2414H&amp;qid=1608621330&amp;s=electronics&amp;sr=1-2">Dell U2414H</a></li>
+<li><a href="https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu">Flexyarm 201 PRO BLACK Monitor Arm</a></li>
+<li><a href="https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu">Flexyarm 201 PRO BLACK LAPTOP Monitor Arm</a></li>
+<li><a href="https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw">StarTech.com Thunderbolt 3 Dock</a></li>
+<li><a href="https://www.apple.com/tr/shop/product/MLA22TQ/A/magic-keyboard-t%C3%BCrk%C3%A7e-q-klavye?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple Magic Keyboard</a></li>
+<li><a href="https://www.apple.com/tr/shop/product/MJ2R2TU/A/magic-trackpad-2-g%C3%BCm%C3%BC%C5%9F-rengi?fnode=054fc5ff1c5f5f2784c6f5ef56f94e34c6567695a60d8f9018ff87a2f10b81180ab61467f55f0802c1b84c457b9536306fddf27257ef0c42cf105221182f0af8b44c2a4927c0f527bea9a2b3c22fb6c357d1c8c1432e9dd5e358fe6a80e0a58ae05a998a3b5b30a7b607558c5d8ffaa1">Apple Magic Trackpad</a></li>
+<li><a href="https://olkb.com/collections/planck">OLKB Planck Keyboard</a></li>
+<li><a href="https://www.logitech.com/en-hk/product/wireless-trackball-m570">Logitech M570 Wireless Trackball Mouse</a></li>
+<li><a href="https://wooaudio.com/amplifiers/wa7">WA7 Fireflies Headphone Amplifier / DAC</a></li>
+<li><a href="https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650">Sennheiser HD650 Headphones</a></li>
+<li><a href="https://support.apple.com/kb/SP762?locale=en_US">iPad Pro 10.5-inch</a></li>
 </ul>
 <h3 id="software">Software</h3>
-<p>Some of these software are important in my workflow. I tried to put
-together some scripts in a <a
-href="https://github.com/emraher/workflow">Github repo</a>.</p>
-<p><a href="https://alternativeto.net/">https://alternativeto.net/</a>
-is a great page to find alternative software.</p>
-<p>You can also find lots of awesome software in <a
-href="https://github.com/topics/awesome">#awesome</a>. For example, for
-MacOS <a href="https://github.com/jaywcjlove/awesome-mac">see this</a>
-and for Windows <a href="https://github.com/Awesome-Windows/Awesome">see
-this</a>.</p>
+<p>Some of these software are important in my workflow. I tried to put together some scripts in a <a href="https://github.com/emraher/workflow">Github repo</a>.</p>
+<p><a href="https://alternativeto.net/">https://alternativeto.net/</a> is a great page to find alternative software.</p>
+<p>You can also find lots of awesome software in <a href="https://github.com/topics/awesome">#awesome</a>. For example, for MacOS <a href="https://github.com/jaywcjlove/awesome-mac">see this</a> and for Windows <a href="https://github.com/Awesome-Windows/Awesome">see this</a>.</p>
 <p>Here is a list of software I use.</p>
 <ul>
 <li>1Password</li>
@@ -2374,8 +2377,7 @@ this</a>.</p>
 <li>tema++</li>
 <li>uBlock Origin</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
