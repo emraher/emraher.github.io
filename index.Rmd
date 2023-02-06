@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 I am a Research Assistant at [Department of Economics, Ankara University  ](http://www.politics.ankara.edu.tr/iktisat/).
 
-I teach undergraduate statistics and data science courses. 
+I teach undergraduate statistics, data science, and agecon courses. 
 
 My research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics.
 
