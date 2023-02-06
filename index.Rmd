@@ -28,9 +28,7 @@ I am a Research Assistant at [Department of Economics, Ankara University  ](http
 
 I teach undergraduate statistics and data science courses. 
 
-My research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics. I am a member of [DigitalLab Mulkiye](https://www.dlabmulkiye-en.org/). I like coding in R and writing useless R packages.
-
-I live in Ankara with my wife and our 4 cats (Badem, Alfred, Frida, and Duman).
+My research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics.
 
 To contact me, send an email to eer[at]eremrah.com. 
 
