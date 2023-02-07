@@ -18,8 +18,5 @@ knitr::opts_chunk$set(echo = FALSE)
 ### [PEC206 - INTRODUCTION TO DATA SCIENCE](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915382&bno=4328&bot=1955)
 #### Spring 2021, Spring 2022, Spring 2023
 
-### [DPEC206 - INTRODUCTION TO DATA SCIENCE]()
-#### Spring 2023
-
-### [IKT3026 - TARIM EKONOMİSİ]()
+### [IKT3026 - TARIM EKONOMİSİ](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?sdgNo=1005630&dno=937275&bno=4303&bot=1923)
 #### Spring 2023
