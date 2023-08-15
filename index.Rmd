@@ -9,6 +9,8 @@ site: distill::distill_website
 links:
   - label: '<i class="fab fa-github fa-lg"></i>'
     url: "https://github.com/emraher"
+  - label: '<i class="fa-solid fa-square"></i>'
+    url: "https://bsky.app/profile/emraher.bsky.social"
   - label: '<i class="fab fa-mastodon fa-lg"></i>'
     url: "https://econtwitter.net/\\@emraher"
   - label: '<i class="fa fa-twitter fa-lg"></i>'
@@ -24,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-I am a Research Assistant at [Department of Economics, Ankara University  ](http://www.politics.ankara.edu.tr/iktisat/).
+I am an Ass. Prof. at [Department of Economics, Ankara University  ](http://www.politics.ankara.edu.tr/iktisat/).
 
 I teach undergraduate statistics, data science, and agecon courses. 
 
@@ -32,6 +34,6 @@ My research interests include Agricultural Economics, Environmental Economics, a
 
 To contact me, send an email to eer[at]eremrah.com. 
 
-You can find my CV [here](). 
+<!-- You can find my CV [here]().  -->
 
 <a rel="me" href="https://econtwitter.net/@emraher"> </a>

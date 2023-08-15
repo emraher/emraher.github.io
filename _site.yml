@@ -22,6 +22,8 @@ navbar:
       href: uses.html
     - icon: fab fa-github
       href: https://github.com/emraher
+    - icon: fa-solid fa-square
+      href: https://bsky.app/profile/emraher.bsky.social
     - icon: fab fa-mastodon
       href: https://econtwitter.net/@emraher
     - icon: fa fa-twitter
