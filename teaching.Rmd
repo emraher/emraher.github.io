@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 #### Spring 2023, Spring 2024
 
 ### [IKT4007 - EKONOMETRİ](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=1072741&bno=4304&bot=1924)
-#### Fall 2023
+#### Fall 2023, Fall 2024
 
 ### [IKT2016 - MATEMATİKSEL İKTİSAT](http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=1072076&bno=4303&bot=1923)
 #### Spring 2024
