@@ -20,8 +20,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -457,8 +458,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -2038,6 +2039,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .btn-outline-dark {
     border-color: white;
   }
+
+  /* change icon color on hover without dark box */
+  .btn-outline-dark:hover {
+    background-color: transparent;
+    border-color: white;
+  }
+
+  .btn-outline-dark:hover i {
+    color: #FF0000;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2194,16 +2205,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+  <link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
   <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
   <link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-  <script src="site_libs/datatables-binding-0.31/datatables.js"></script>
+  <script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
   <link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
   <script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
-  <link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
-  <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2281,7 +2293,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
 <a href="https://bsky.app/profile/emraher.bsky.social">
-<i class="fa fa-solid fa-square" aria-hidden="true"></i>
+<i class="fab fa-bluesky" aria-hidden="true"></i>
 </a>
 <a href="https://econtwitter.net/@emraher">
 <i class="fab fa-mastodon" aria-hidden="true"></i>
@@ -2311,8 +2323,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <div class="layout-chunk" data-layout="l-body-outset">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-b706b29d1b87a3ef7397" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-b706b29d1b87a3ef7397">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64"],["Delta","Edison Pen Co.","Edison Pen Co.","Franklin Christoph","Franklin Christoph","Hero","Hero","Hero","Hero","Hero","Jinhao","Jinhao","Kaigelu","Kaigelu","Karaskustoms","Kaweco","Kaweco","Kaweco","Kaweco","Kaweco","Lamy","Lamy","Lamy","Lamy","Lamy","Montblanc","Nakaya","Namiki","Nemosine","Noodler's","Noodler's","Noodler's","Parker","Parker","Pelikan","Pelikan","Pelikan","Pelikan","Pelikan","Pelikan","Pilot","Pilot","Pilot","Pilot","Pilot","Pilot","Pilot","Pilot","Platinum","Platinum","PSP","Sailor","Sailor","Scrikss","Scriptorium Pens","Serwex","Sheaffer","TWSBI","TWSBI","TWSBI","TWSBI","TWSBI","Visconti","Waterman"],["Dolce Vita","Collier","Glenmont","Model 19","Model 02","#59","329","360","616","616","X450","X750","316","336","Ink","AL Sport","AL Sport Stonewashed","Classic Sport","Ice Sport","Ice Sport","2000","2000","Joy Calligraphy","Safari","Studio -","Meisterstück 146","Naka-ai","Falcon","Singularity","Konrad Flex","Neponset","Nib Creaper","51","Duofold Senior","140","140","M205","M400","M400","M800","78G","Kakuno","Metropolitan","Parallel Calligraphy","Penmanship","Plumix","Prera","Vanishing Point","3776 Century","Kanazawa Leaf Maki-e","Soquel","1911","Clear Candy","419","Custom","1362","Imperial Cartridge","Diamond 580","Micarta","Mini","Mini","Vac 700","Homo-Sapiens","52 1/2V"],["Mid-Size","Persimmon Swirl","2014 LEE 16/108","","","Silver","Older Version with Gold Cap Red","Light Blue","Black","Green","Black Marble","Frosted Black","Frosted Black","White","Aluminum","Raw Aluminum Body","Black Body","Black Body","Red Body","Yellow Body","","","Black Body","Charcoal","Royal Red Body","90th Anniversary","Heki Tamenuri","Metal","","Metal","Walnut Ebonite Ripple","Walnut Ebonite Ripple","Aerometric Demi Forest Green","Big Red","","","Traditional Red Body","Red Stripe","Tortoiseshell White","Tortoiseshell Brown","4 of each","Blue","Animal Collection - White Tiger","","Black Body","Light Blue Body","Clear Body Clear Light Green Accent","Black Matte","Nice","Goldfish","Ebonite Aerometric F., Matte Black","","Milk","Burgundy","","?","Burgundy","Black with Rose Gold","","","White with Rose Gold","Blue","Midi","Ring-Top"],["EF","EF","EF","Masuyama - .3mm CI","Masuyama - Needlepoint","","","","","","","","","","EF","EF","EF","Twin","EF","BB","Masuyama - Needlepoint","OBB","1.5mm","EF","M","Masuyama - .3mm CI","Mottishaw - .3mm CI","Mottishaw - Spencerian",".6mm S","Flex","Music Flex","Flex","F","F Flex","EF","F","EF","Binder - .3mm CI LO","Mottishaw - .3mm CI","IB","F-M-B-BB","F","F","2.4mm","EF","MI","F","F","F","F","F Flex","EF","MF","","EF","","M","M","Pendleton - .4mm CI Flex","1.1mm S","B","EF","Mottishaw - .3mm CI","Flex"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Manufacturer<\/th>\n      <th>Model<\/th>\n      <th>Details<\/th>\n      <th>Nib<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Manufacturer","targets":1},{"name":"Model","targets":2},{"name":"Details","targets":3},{"name":"Nib","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-038d6d7fa207169928db" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-038d6d7fa207169928db">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64"],["Delta","Edison Pen Co.","Edison Pen Co.","Franklin Christoph","Franklin Christoph","Hero","Hero","Hero","Hero","Hero","Jinhao","Jinhao","Kaigelu","Kaigelu","Karaskustoms","Kaweco","Kaweco","Kaweco","Kaweco","Kaweco","Lamy","Lamy","Lamy","Lamy","Lamy","Montblanc","Nakaya","Namiki","Nemosine","Noodler's","Noodler's","Noodler's","Parker","Parker","Pelikan","Pelikan","Pelikan","Pelikan","Pelikan","Pelikan","Pilot","Pilot","Pilot","Pilot","Pilot","Pilot","Pilot","Pilot","Platinum","Platinum","PSP","Sailor","Sailor","Scrikss","Scriptorium Pens","Serwex","Sheaffer","TWSBI","TWSBI","TWSBI","TWSBI","TWSBI","Visconti","Waterman"],["Dolce Vita","Collier","Glenmont","Model 19","Model 02","#59","329","360","616","616","X450","X750","316","336","Ink","AL Sport","AL Sport Stonewashed","Classic Sport","Ice Sport","Ice Sport","2000","2000","Joy Calligraphy","Safari","Studio -","Meisterstück 146","Naka-ai","Falcon","Singularity","Konrad Flex","Neponset","Nib Creaper","51","Duofold Senior","140","140","M205","M400","M400","M800","78G","Kakuno","Metropolitan","Parallel Calligraphy","Penmanship","Plumix","Prera","Vanishing Point","3776 Century","Kanazawa Leaf Maki-e","Soquel","1911","Clear Candy","419","Custom","1362","Imperial Cartridge","Diamond 580","Micarta","Mini","Mini","Vac 700","Homo-Sapiens","52 1/2V"],["Mid-Size","Persimmon Swirl","2014 LEE 16/108","","","Silver","Older Version with Gold Cap Red","Light Blue","Black","Green","Black Marble","Frosted Black","Frosted Black","White","Aluminum","Raw Aluminum Body","Black Body","Black Body","Red Body","Yellow Body","","","Black Body","Charcoal","Royal Red Body","90th Anniversary","Heki Tamenuri","Metal","","Metal","Walnut Ebonite Ripple","Walnut Ebonite Ripple","Aerometric Demi Forest Green","Big Red","","","Traditional Red Body","Red Stripe","Tortoiseshell White","Tortoiseshell Brown","4 of each","Blue","Animal Collection - White Tiger","","Black Body","Light Blue Body","Clear Body Clear Light Green Accent","Black Matte","Nice","Goldfish","Ebonite Aerometric F., Matte Black","","Milk","Burgundy","","?","Burgundy","Black with Rose Gold","","","White with Rose Gold","Blue","Midi","Ring-Top"],["EF","EF","EF","Masuyama - .3mm CI","Masuyama - Needlepoint","","","","","","","","","","EF","EF","EF","Twin","EF","BB","Masuyama - Needlepoint","OBB","1.5mm","EF","M","Masuyama - .3mm CI","Mottishaw - .3mm CI","Mottishaw - Spencerian",".6mm S","Flex","Music Flex","Flex","F","F Flex","EF","F","EF","Binder - .3mm CI LO","Mottishaw - .3mm CI","IB","F-M-B-BB","F","F","2.4mm","EF","MI","F","F","F","F","F Flex","EF","MF","","EF","","M","M","Pendleton - .4mm CI Flex","1.1mm S","B","EF","Mottishaw - .3mm CI","Flex"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Manufacturer<\/th>\n      <th>Model<\/th>\n      <th>Details<\/th>\n      <th>Nib<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Manufacturer","targets":1},{"name":"Model","targets":2},{"name":"Details","targets":3},{"name":"Nib","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

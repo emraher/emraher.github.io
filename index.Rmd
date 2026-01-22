@@ -9,7 +9,7 @@ site: distill::distill_website
 links:
   - label: '<i class="fab fa-github fa-lg"></i>'
     url: "https://github.com/emraher"
-  - label: '<i class="fa-solid fa-square"></i>'
+  - label: '<i class="fab fa-bluesky"></i>'
     url: "https://bsky.app/profile/emraher.bsky.social"
   - label: '<i class="fab fa-mastodon fa-lg"></i>'
     url: "https://econtwitter.net/\\@emraher"

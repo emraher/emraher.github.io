@@ -121,3 +121,13 @@ ul > li::marker {
   border-color: white;
 }
 
+/* change icon color on hover without dark box */
+.btn-outline-dark:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+.btn-outline-dark:hover i {
+  color: #FF0000;
+}
+

@@ -20,8 +20,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -457,8 +458,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -2038,6 +2039,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .btn-outline-dark {
     border-color: white;
   }
+
+  /* change icon color on hover without dark box */
+  .btn-outline-dark:hover {
+    background-color: transparent;
+    border-color: white;
+  }
+
+  .btn-outline-dark:hover i {
+    color: #FF0000;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2194,7 +2205,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2272,7 +2283,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
 <a href="https://bsky.app/profile/emraher.bsky.social">
-<i class="fa fa-solid fa-square" aria-hidden="true"></i>
+<i class="fab fa-bluesky" aria-hidden="true"></i>
 </a>
 <a href="https://econtwitter.net/@emraher">
 <i class="fab fa-mastodon" aria-hidden="true"></i>
@@ -2301,24 +2312,34 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<h2 id="undergraduate-courses">UNDERGRADUATE COURSES</h2>
-<h3 id="ikt0203---istatistik-i"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914116&amp;bno=4303&amp;bot=1923">IKT0203 - İSTATİSTİK I</a></h3>
-<h4 id="fall-2019-fall-2020">Fall 2019, Fall 2020</h4>
-<h3 id="ikt0210---istatistik-ii"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914124&amp;bno=4303&amp;bot=1923">IKT0210 - İSTATİSTİK II</a></h3>
-<h4 id="spring-2019-spring-2020-spring-2021-spring-2022-spring-2023-spring-2024">Spring 2019, Spring 2020, Spring 2021, Spring 2022, Spring 2023, Spring 2024</h4>
-<h3 id="pec205---statistics-for-social-sciences"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915372&amp;bno=4328&amp;bot=1955">PEC205 - STATISTICS FOR SOCIAL SCIENCES</a></h3>
-<h4 id="fall-2020-fall-2021-fall-2022-fall-2023">Fall 2020, Fall 2021, Fall 2022, Fall 2023</h4>
-<h3 id="pec206---introduction-to-data-science"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915382&amp;bno=4328&amp;bot=1955">PEC206 - INTRODUCTION TO DATA SCIENCE</a></h3>
-<h4 id="spring-2021-spring-2022-spring-2023-spring-2024">Spring 2021, Spring 2022, Spring 2023, Spring 2024</h4>
-<h3 id="ikt3026---tarim-ekonomisi"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?sdgNo=1005630&amp;dno=937275&amp;bno=4303&amp;bot=1923">IKT3026 - TARIM EKONOMİSİ</a></h3>
-<h4 id="spring-2023-spring-2024">Spring 2023, Spring 2024</h4>
-<h3 id="ikt4007---ekonometri"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=1072741&amp;bno=4304&amp;bot=1924">IKT4007 - EKONOMETRİ</a></h3>
-<h4 id="fall-2023">Fall 2023</h4>
-<h3 id="ikt2016---matematiksel-iktisat"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=1072076&amp;bno=4303&amp;bot=1923">IKT2016 - MATEMATİKSEL İKTİSAT</a></h3>
-<h4 id="spring-2024">Spring 2024</h4>
-<h2 id="graduate-courses">GRADUATE COURSES</h2>
-<h3 id="veri-bilimi"><a href="">22067002 - VERİ BİLİMİ</a></h3>
-<h4 id="fall-2023-spring-2024">Fall 2023, Spring 2024</h4>
+<h3 id="undergraduate-courses">UNDERGRADUATE COURSES</h3>
+<h4 id="ikt0203---istatistik-i"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914116&amp;bno=4303&amp;bot=1923">IKT0203 - İSTATİSTİK I</a></h4>
+<h5 id="fall-2019-fall-2020">Fall 2019, Fall 2020</h5>
+<h4 id="ikt0210---istatistik-ii"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=914124&amp;bno=4303&amp;bot=1923">IKT0210 - İSTATİSTİK II</a></h4>
+<h5 id="spring-2019-spring-2020-spring-2021-spring-2022-spring-2023-spring-2024">Spring 2019, Spring 2020, Spring 2021, Spring 2022, Spring 2023, Spring 2024</h5>
+<h4 id="pec205---statistics-for-social-sciences"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915372&amp;bno=4328&amp;bot=1955">PEC205 - STATISTICS FOR SOCIAL SCIENCES</a></h4>
+<h5 id="fall-2020-fall-2021-fall-2022-fall-2023">Fall 2020, Fall 2021, Fall 2022, Fall 2023</h5>
+<h4 id="pec206---introduction-to-data-science"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=915382&amp;bno=4328&amp;bot=1955">PEC206 - INTRODUCTION TO DATA SCIENCE</a></h4>
+<h5 id="spring-2021-spring-2022-spring-2023-spring-2024">Spring 2021, Spring 2022, Spring 2023, Spring 2024</h5>
+<h4 id="ikt3026---tarim-ekonomisi"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?sdgNo=1005630&amp;dno=937275&amp;bno=4303&amp;bot=1923">IKT3026 - TARIM EKONOMİSİ</a></h4>
+<h5 id="spring-2023-spring-2024-spring-2025">Spring 2023, Spring 2024, Spring 2025</h5>
+<h4 id="ikt4007---ekonometri"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=1072741&amp;bno=4304&amp;bot=1924">IKT4007 - EKONOMETRİ</a></h4>
+<h5 id="fall-2023-fall-2024-fall-2025">Fall 2023, Fall 2024, Fall 2025</h5>
+<h4 id="ikt2016---matematiksel-iktisat"><a href="http://bbs.ankara.edu.tr/Ders_Bilgileri.aspx?dno=1072076&amp;bno=4303&amp;bot=1923">IKT2016 - MATEMATİKSEL İKTİSAT</a></h4>
+<h5 id="spring-2024">Spring 2024</h5>
+<h3 id="graduate-courses">GRADUATE COURSES</h3>
+<h4 id="veri-bilimi"><a href="">22067002 - VERİ BİLİMİ</a></h4>
+<h5 id="fall-2023-spring-2024">Fall 2023, Spring 2024</h5>
+<h4 id="bankacilikta-araştirma-yöntemleri"><a href="">22067017 - BANKACILIKTA ARAŞTIRMA YÖNTEMLERİ</a></h4>
+<h5 id="spring-2025-fall-2025">Spring 2025, Fall 2025</h5>
+<h4 id="iktisatta-nedensel-çikarim-i"><a href="">21005058 - İKTİSATTA NEDENSEL ÇIKARIM I</a></h4>
+<h5 id="fall-2025">Fall 2025</h5>
+<h4 id="iktisatta-nedensel-çikarim-ileri-konular-i"><a href="">21006070 - İKTİSATTA NEDENSEL ÇIKARIM İLERİ KONULAR I</a></h4>
+<h5 id="fall-2025-1">Fall 2025</h5>
+<h4 id="program-değerlendirmesi"><a href="">21005059 - PROGRAM DEĞERLENDİRMESİ</a></h4>
+<h5 id="fall-2025-2">Fall 2025</h5>
+<h4 id="ileri-program-değerlendirmesi"><a href="">21006071 - İLERİ PROGRAM DEĞERLENDİRMESİ</a></h4>
+<h5 id="fall-2025-3">Fall 2025</h5>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

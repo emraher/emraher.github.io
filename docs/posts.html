@@ -21,8 +21,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -458,8 +459,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -2039,6 +2040,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .btn-outline-dark {
     border-color: white;
   }
+
+  /* change icon color on hover without dark box */
+  .btn-outline-dark:hover {
+    background-color: transparent;
+    border-color: white;
+  }
+
+  .btn-outline-dark:hover i {
+    color: #FF0000;
+  }
   </style>
   <style type="text/css">
   /* base style */
@@ -2195,7 +2206,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2273,7 +2284,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <i class="fab fa-github" aria-hidden="true"></i>
 </a>
 <a href="https://bsky.app/profile/emraher.bsky.social">
-<i class="fa fa-solid fa-square" aria-hidden="true"></i>
+<i class="fab fa-bluesky" aria-hidden="true"></i>
 </a>
 <a href="https://econtwitter.net/@emraher">
 <i class="fab fa-mastodon" aria-hidden="true"></i>
