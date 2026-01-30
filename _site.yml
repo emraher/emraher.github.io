@@ -26,16 +26,12 @@ navbar:
       href: https://bsky.app/profile/emraher.bsky.social
     - icon: fab fa-mastodon
       href: https://econtwitter.net/@emraher
-    - icon: fa fa-twitter
-      href: https://twitter.com/emrah_er
+    - icon: fab fa-x-twitter
+      href: https://x.com/emrah_er
     - icon: fab fa-keybase
       href: https://keybase.io/emraher
 base_url: https://eremrah.com
-google_analytics: "UA-56648030-1"
-repository_url: https://www.github.com/emraher/emraher.github.io
 favicon: images/logo.png
-twitter:
-  site: "@emrah_er"
 output:
   distill::distill_article:
     includes:

@@ -104,7 +104,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="emraher: Teaching"/>
-  <meta property="twitter:site" content="@emrah_er"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -2035,19 +2034,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       display: none;
   }
 
-  /* delete button border */
+  /* delete button border and background */
   .btn-outline-dark {
-    border-color: white;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #000;
   }
 
-  /* change icon color on hover without dark box */
-  .btn-outline-dark:hover {
-    background-color: transparent;
-    border-color: white;
+  /* change icon color on hover/focus/active without dark box or border */
+  .btn-outline-dark:hover,
+  .btn-outline-dark:focus,
+  .btn-outline-dark:active,
+  .btn-outline-dark.active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: #FF0000 !important;
+    outline: none !important;
   }
 
-  .btn-outline-dark:hover i {
-    color: #FF0000;
+  .btn-outline-dark i {
+    color: inherit;
+  }
+
+  .list-group-item {
+    border: 0px solid;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .vh-100.border-left {
+    border-left: none !important;
   }
   </style>
   <style type="text/css">
@@ -2243,13 +2263,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     });
   </script>
 
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-56648030-1"></script>
-  <script type="text/javascript" cookie-consent="tracking">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-56648030-1');
-  </script>
   <!--/radix_placeholder_site_in_header-->
 
 
@@ -2288,8 +2301,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="https://econtwitter.net/@emraher">
 <i class="fab fa-mastodon" aria-hidden="true"></i>
 </a>
-<a href="https://twitter.com/emrah_er">
-<i class="fa fa-twitter" aria-hidden="true"></i>
+<a href="https://x.com/emrah_er">
+<i class="fab fa-x-twitter" aria-hidden="true"></i>
 </a>
 <a href="https://keybase.io/emraher">
 <i class="fab fa-keybase" aria-hidden="true"></i>
@@ -2352,10 +2365,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://www.github.com/emraher/emraher.github.io/issues/new">create an issue</a> on the source repository.</p>
-</div>
+<div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

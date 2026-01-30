@@ -3,37 +3,29 @@ title: "Emrah Er"
 image: "images/logo.png"
 base_url: https://eremrah.com
 preview: images/logo.png
-twitter:
-  creator: "@emrah_er"
 site: distill::distill_website
 links:
+  - label: '<i class="fa fa-envelope fa-lg"></i>'
+    url: "mailto:eer@eremrah.com"
   - label: '<i class="fab fa-github fa-lg"></i>'
     url: "https://github.com/emraher"
   - label: '<i class="fab fa-bluesky"></i>'
     url: "https://bsky.app/profile/emraher.bsky.social"
   - label: '<i class="fab fa-mastodon fa-lg"></i>'
     url: "https://econtwitter.net/\\@emraher"
-  - label: '<i class="fa fa-twitter fa-lg"></i>'
-    url: "https://twitter.com/emrah_er"
+  - label: '<i class="fab fa-x-twitter fa-lg"></i>'
+    url: "https://x.com/emrah_er"
   - label: '<i class="fab fa-keybase fa-lg"></i>'
     url: "https://keybase.io/emraher"
 output:
   postcards::trestles
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
+I am an Assistant Professor in the [Department of Economics at Ankara University](http://www.politics.ankara.edu.tr/iktisat/). 
 
-I am an Ass. Prof. at [Department of Economics, Ankara University](http://www.politics.ankara.edu.tr/iktisat/).
+I teach undergraduate econometrics and agricultural economics, as well as graduate research methods and causal inference.
 
-I teach undergraduate statistics, data science, and agecon courses. 
-
-My research interests include Agricultural Economics, Environmental Economics, and Applied Econometrics.
-
-To contact me, send an email to eer[at]eremrah.com. 
-
-<!-- You can find my CV [here]().  -->
+My research focuses on agricultural and environmental economics using applied econometrics and causal inference methods.
 
 <a rel="me" href="https://econtwitter.net/@emraher"> </a>

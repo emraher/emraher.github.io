@@ -116,18 +116,39 @@ ul > li::marker {
     display: none;
 }
 
-/* delete button border */
+/* delete button border and background */
 .btn-outline-dark {
-  border-color: white;
+  border-color: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #000;
 }
 
-/* change icon color on hover without dark box */
-.btn-outline-dark:hover {
-  background-color: transparent;
-  border-color: white;
+/* change icon color on hover/focus/active without dark box or border */
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active,
+.btn-outline-dark.active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: #FF0000 !important;
+  outline: none !important;
 }
 
-.btn-outline-dark:hover i {
-  color: #FF0000;
+.btn-outline-dark i {
+  color: inherit;
+}
+
+.list-group-item {
+  border: 0px solid;
+}
+
+hr {
+  display: none;
+}
+
+.vh-100.border-left {
+  border-left: none !important;
 }
 
