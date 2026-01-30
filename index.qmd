@@ -1,5 +1,4 @@
 ---
-title: Emrah Er
 image: logo.png
 about:
   template: trestles

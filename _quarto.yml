@@ -19,9 +19,9 @@ website:
       href: eviews.qmd
     - text: "usesthis"
       href: uses.qmd
-    - text: '<i class="fa-brands fa-github fa-lg fa-fw"></i>'
-      href: "https://github.com/emraher"
-      aria-label: Github
+    - text: '<i class="fa-solid fa-at fa-lg fa-fw"></i>'
+      href: "mailto:eer@eremrah.com"
+      aria-label: Mail
       target: _blank
       rel: me
     - text: '<i class="fa-brands fa-bluesky fa-lg fa-fw"></i>'
@@ -39,13 +39,21 @@ website:
       aria-label: Twitter
       target: _blank
       rel: me
+    - text: '<i class="fa-brands fa-github fa-lg fa-fw"></i>'
+      href: "https://github.com/emraher"
+      aria-label: Github
+      target: _blank
+      rel: me
+    - text: '<i class="fa-brands fa-orcid fa-lg fa-fw"></i>'
+      href: "https://orcid.org/0000-0001-9909-7479"
+      aria-label: Orcid
+      target: _blank
+      rel: me
     - text: '<i class="fa-brands fa-keybase fa-lg fa-fw"></i>'
       href: "https://keybase.io/emraher"
       aria-label: Keybase
       target: _blank
       rel: me
-
-
 
 format:
   html:
