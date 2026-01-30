@@ -1,10 +1,10 @@
 ---
-title: "Teaching"
+title: ""
 ---
 
 ::: {.panel-tabset}
 
-## Undergraduate
+### Undergraduate
 
 *   **IKT0203 - İstatistik I**
     <br><small class="text-muted">Fall 2019, Fall 2020</small>
@@ -28,7 +28,7 @@ title: "Teaching"
     <br><small class="text-muted">Spring 2023, Spring 2024, Spring 2025</small>
 
 
-## Graduate
+### Graduate
 
 *   **22067002 - Veri Bilimi**
     <br><small class="text-muted">Fall 2023, Spring 2024</small>

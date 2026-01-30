@@ -8,17 +8,18 @@ website:
   description: "emraher"
   navbar:
     search: false
-    right:
-    - text: "Home"
+    left:
+    - text: '<i class="fa-solid fa-house fa-lg fa-fw"></i> Home'
       href: index.qmd
-    - text: "Teaching"
+    - text: '<i class="fa-solid fa-person-chalkboard fa-lg fa-fw"></i> Teaching'
       href: teaching.qmd
-    - text: "R"
+    - text: '<i class="fa-brands fa-r-project fa-lg fa-fw"></i> R'
       href: software.qmd
-    - text: "Eviews"
+    - text: '<i class="fa-solid fa-note-sticky fa-lg fa-fw"></i> Eviews'
       href: eviews.qmd
-    - text: "usesthis"
+    - text: '<i class="fa-solid fa-toolbox fa-lg fa-fw"></i> usesthis'
       href: uses.qmd
+    right: 
     - text: '<i class="fa-solid fa-at fa-lg fa-fw"></i>'
       href: "mailto:eer@eremrah.com"
       aria-label: Mail

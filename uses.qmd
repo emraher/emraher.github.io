@@ -5,7 +5,7 @@ title: ""
 I enjoy reading interviews on [usesthis.com](https://usesthis.com/). Every so often, friends and colleagues ask what hardware and software I use. Below is my current setup.
 
 
-## Hardware
+### Hardware
 
 ::: {.uses-grid}
 
@@ -45,7 +45,7 @@ I enjoy reading interviews on [usesthis.com](https://usesthis.com/). Every so of
 
 :::
 
-## Software
+### Software
 
 My primary development environment runs on macOS, managed entirely through [chezmoi](https://www.chezmoi.io/) for reproducible setup across machines. I live in [iterm](https://iterm2.com/) with [powerlevel10k](https://github.com/romkatv/powerlevel10k) giving me a clean, information-dense prompt in my Oh My Zsh shell. R is my primary statistical environment. For editing, I bounce between [Sublime Text](https://www.sublimetext.com/) and [RStudio](https://posit.co/products/open-source/rstudio/). I use [AeroSpace](https://github.com/nikitabobko/AeroSpace) for tiling window management with [JankyBorders](https://github.com/FelixKratz/JankyBorders) adding visual separation, and [Karabiner](https://karabiner-elements.pqrs.org/) plus [Hammerspoon](https://www.hammerspoon.org/) handle keyboard customization and automation. Firefox is my main browser with heavy UI customization through userChrome.css. For a complete list of software I use check my [dotfiles](https://github.com/emraher/dotfiles).
 

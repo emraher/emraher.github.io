@@ -18,35 +18,21 @@
     "href": "uses.html",
     "title": "",
     "section": "",
-    "text": "I enjoy reading interviews on usesthis.com. Every so often, friends and colleagues ask what hardware and software I use. Below is my current setup."
-  },
-  {
-    "objectID": "uses.html#hardware",
-    "href": "uses.html#hardware",
-    "title": "",
-    "section": "Hardware",
-    "text": "Hardware\n\n\n Computers & Displays\n\nMac Mini (2024)\nMacBook Pro 15” (2018)\nLenovo Thinkpad T420\nSamsung 37” ViewFinity S8\nDell P2314H\nDell U2414H\n\n\n\n Input\n\nApple Magic Keyboard & Trackpad\nOLKB Planck Keyboard\nLogitech G915 TKL\nLogitech M570 Trackball\nCorne 42 LP\n8BitDo Retro Mechanical Keyboard - C64 Edition\nMCHOSE GX87\n\n\n\n Audio & Other\n\nWA7 Fireflies Amp/DAC\nSennheiser HD650\niPad Pro 10.5”\nStarTech Thunderbolt 3 Dock\nFlexyarm 201 PRO BLACK Monitor Arm\nFlexyarm 201 PRO BLACK LAPTOP Monitor Arm"
-  },
-  {
-    "objectID": "uses.html#software",
-    "href": "uses.html#software",
-    "title": "",
-    "section": "Software",
-    "text": "Software\nMy primary development environment runs on macOS, managed entirely through chezmoi for reproducible setup across machines. I live in iterm with powerlevel10k giving me a clean, information-dense prompt in my Oh My Zsh shell. R is my primary statistical environment. For editing, I bounce between Sublime Text and RStudio. I use AeroSpace for tiling window management with JankyBorders adding visual separation, and Karabiner plus Hammerspoon handle keyboard customization and automation. Firefox is my main browser with heavy UI customization through userChrome.css. For a complete list of software I use check my dotfiles."
+    "text": "I enjoy reading interviews on usesthis.com. Every so often, friends and colleagues ask what hardware and software I use. Below is my current setup.\n\nHardware\n\n\n Computers & Displays\n\nMac Mini (2024)\nMacBook Pro 15” (2018)\nLenovo Thinkpad T420\nSamsung 37” ViewFinity S8\nDell P2314H\nDell U2414H\n\n\n\n Input\n\nApple Magic Keyboard & Trackpad\nOLKB Planck Keyboard\nLogitech G915 TKL\nLogitech M570 Trackball\nCorne 42 LP\n8BitDo Retro Mechanical Keyboard - C64 Edition\nMCHOSE GX87\n\n\n\n Audio & Other\n\nWA7 Fireflies Amp/DAC\nSennheiser HD650\niPad Pro 10.5”\nStarTech Thunderbolt 3 Dock\nFlexyarm 201 PRO BLACK Monitor Arm\nFlexyarm 201 PRO BLACK LAPTOP Monitor Arm\n\n\n\n\n\nSoftware\nMy primary development environment runs on macOS, managed entirely through chezmoi for reproducible setup across machines. I live in iterm with powerlevel10k giving me a clean, information-dense prompt in my Oh My Zsh shell. R is my primary statistical environment. For editing, I bounce between Sublime Text and RStudio. I use AeroSpace for tiling window management with JankyBorders adding visual separation, and Karabiner plus Hammerspoon handle keyboard customization and automation. Firefox is my main browser with heavy UI customization through userChrome.css. For a complete list of software I use check my dotfiles."
   },
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "Teaching",
+    "title": "",
     "section": "",
     "text": "UndergraduateGraduate\n\n\n\nIKT0203 - İstatistik I Fall 2019, Fall 2020\nIKT0210 - İstatistik II Spring 2019, Spring 2020, Spring 2021, Spring 2022, Spring 2023, Spring 2024\nPEC205 - Statistics for Social Sciences Fall 2020, Fall 2021, Fall 2022, Fall 2023\nPEC206 - Introduction to Data Science Spring 2021, Spring 2022, Spring 2023, Spring 2024\nIKT2016 - Matematiksel İktisat Spring 2024\nIKT4007 - Ekonometri Fall 2023, Fall 2024, Fall 2025\nIKT3026 - Tarım Ekonomisi Spring 2023, Spring 2024, Spring 2025\n\n\n\n\n22067002 - Veri Bilimi Fall 2023, Spring 2024\n22067017 - Bankacılıkta Araştırma Yöntemleri Spring 2025, Fall 2025\n21005058 - İktisatta Nedensel Çıkarım I Fall 2025\n21006070 - İktisatta Nedensel Çıkarım İleri Konular I Fall 2025\n21005059 - Program Değerlendirmesi Fall 2025\n21006071 - İleri Program Değerlendirmesi Fall 2025"
   },
   {
     "objectID": "eviews.html",
     "href": "eviews.html",
-    "title": "Eviews Ders Notları",
+    "title": "",
     "section": "",
-    "text": "Bu kılavuz “A Guide to Using EViews with Using Econometrics: A Practical Guide” temel alınarak hazırlanmıştır.\n\nDers Bölümleri\n\n\n1. Bölüm: Giriş\n\n\n2. Bölüm: Regresyon Analizi\n\n\n3. Bölüm: En Küçük Kareler\n\n\n4. Bölüm: Regresyon Analizini Kullanmayı Öğrenme\n\n\n5. Bölüm: Temel İstatistikler ve Hipotez Testi\n\n\n6. Bölüm: Çoklu Bağıntı\n\n\n7. Bölüm: Ardışık Bağımlılık\n\n\n8. Bölüm: Değişen Varyans\n\n\n9. Bölüm: Model Kurma: Bağımsız Değişken Seçimi\n\n\n10. Bölüm: Model Kurma: Fonksiyonel Form Seçimi\n\n\n\n\nEşanlı Denklem Sistemleri\n\n\n11. Bölüm: Eşanlı Denklem Sistemleri (Ek)\n\n\n“Fulton Fish Market” Örneği (İngilizce)\n\n\nA Simultaneous Equation Model for World Crude Oil and Natural Gas Markets - IMF Working Papers 05/32\n\n\nKlein’s Model Tahmin Sonuçları\n\n\n\n\nDiğer Notlar\n\n\nGujarati Otokorelasyon (Bu dosya kısmen düzensiz olduğundan bazı hatalar bulunabilir)\n\n\nDeğişen Varyans Ek\n\n\nEndeks Sayıları"
+    "text": "“A Guide to Using EViews with Using Econometrics: A Practical Guide” temel alınarak hazırlanmıştır.\n\nDersler\n\n\n1. Bölüm: Giriş\n\n\n2. Bölüm: Regresyon Analizi\n\n\n3. Bölüm: En Küçük Kareler\n\n\n4. Bölüm: Regresyon Analizini Kullanmayı Öğrenme\n\n\n5. Bölüm: Temel İstatistikler ve Hipotez Testi\n\n\n6. Bölüm: Çoklu Bağıntı\n\n\n7. Bölüm: Ardışık Bağımlılık\n\n\n8. Bölüm: Değişen Varyans\n\n\n9. Bölüm: Model Kurma: Bağımsız Değişken Seçimi\n\n\n10. Bölüm: Model Kurma: Fonksiyonel Form Seçimi\n\n\n11. Bölüm: Eşanlı Denklem Sistemleri\n\n\n\n\nEşanlı Denklem Sistemleri (Ek)\n\n\n“Fulton Fish Market” Örneği (İngilizce)\n\n\nA Simultaneous Equation Model for World Crude Oil and Natural Gas Markets - IMF Working Papers 05/32\n\n\nKlein’s Model Tahmin Sonuçları\n\n\n\n\nDiğer Notlar\n\n\nGujarati Otokorelasyon (Bu dosya kısmen düzensiz olduğundan bazı hatalar bulunabilir)\n\n\nDeğişen Varyans Ek\n\n\nEndeks Sayıları"
   },
   {
     "objectID": "eviews/index.html",
