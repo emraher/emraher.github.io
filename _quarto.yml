@@ -7,7 +7,6 @@ website:
   site-url: "https://eremrah.com/"
   description: "emraher"
   navbar:
-    logo: "logo.png"
     search: false
     right:
     - text: "Home"
