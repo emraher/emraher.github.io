@@ -1,6 +1,6 @@
 ---
 title: Emrah Er
-image: logo.svg
+image: logo.png
 about:
   template: trestles
   links:
