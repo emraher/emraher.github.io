@@ -2,10 +2,6 @@
 title: "Eviews Ders Notları"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 Bu kılavuz *"A Guide to Using EViews with Using Econometrics: A Practical Guide"* temel alınarak hazırlanmıştır.
 
 ### Ders Bölümleri

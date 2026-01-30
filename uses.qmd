@@ -2,10 +2,6 @@
 title: ""
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 I like reading interviews on [usesthis](https://usesthis.com/). From time to time my friends and colleagues also ask me what hardware and software I use. Here is my current setup.
 
 ## Hardware
