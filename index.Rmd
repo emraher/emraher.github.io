@@ -1,7 +1,7 @@
 ---
 title: "Emrah Er"
 image: "images/logo.png"
-base_url: http://eremrah.com
+base_url: https://eremrah.com
 preview: images/logo.png
 twitter:
   creator: "@emrah_er"

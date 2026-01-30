@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>http://eremrah.com/about.html</loc>
+    <loc>https://eremrah.com/about.html</loc>
     <lastmod>2026-01-22T16:57:00+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/eviews.html</loc>
+    <loc>https://eremrah.com/eviews.html</loc>
     <lastmod>2026-01-22T16:57:00+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/fp.html</loc>
+    <loc>https://eremrah.com/fp.html</loc>
     <lastmod>2026-01-22T16:57:00+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/</loc>
+    <loc>https://eremrah.com/</loc>
     <lastmod>2026-01-22T17:03:17+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/posts.html</loc>
+    <loc>https://eremrah.com/posts.html</loc>
     <lastmod>2026-01-22T16:57:00+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/software.html</loc>
+    <loc>https://eremrah.com/software.html</loc>
     <lastmod>2026-01-22T16:57:00+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/teaching.html</loc>
+    <loc>https://eremrah.com/teaching.html</loc>
     <lastmod>2026-01-22T17:30:05+03:00</lastmod>
   </url>
   <url>
-    <loc>http://eremrah.com/uses.html</loc>
+    <loc>https://eremrah.com/uses.html</loc>
     <lastmod>2026-01-22T16:57:00+03:00</lastmod>
   </url>
 </urlset>

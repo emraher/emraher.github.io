@@ -4,7 +4,7 @@ https://keybase.io/emraher
 
 I hereby claim:
 
-  * I am an admin of http://eremrah.com
+  * I am an admin of https://eremrah.com
   * I am emraher (https://keybase.io/emraher) on keybase.
   * I have a public key ASCc5koQFQ_6hJ7bYgFFWP3TxyCqSvIMMEYc55a3dvnMdQo
 
