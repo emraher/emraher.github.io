@@ -1,5 +1,4 @@
 /.quarto/
-/_site/
 _posts/*/*.js
 _posts/*/*.html
 .DS_Store

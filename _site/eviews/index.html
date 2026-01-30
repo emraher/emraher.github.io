@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Eviews</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c92d44440e2cb5eb649b54415c6864c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../logo.png" alt="" class="navbar-logo light-content">
+    <img src="../logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../software.html"> 
+<span class="menu-text">R</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../eviews.html"> 
+<span class="menu-text">Eviews</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../uses.html"> 
+<span class="menu-text">usesthis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/emraher" rel="me" target="_blank"> 
+<span class="menu-text"><i class="fab fa-github fa-lg"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/emraher.bsky.social" rel="me" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-bluesky"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://econtwitter.net/@emraher" rel="me" target="_blank"> 
+<span class="menu-text"><i class="fab fa-mastodon fa-lg"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://twitter.com/emrah_er" rel="me" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-x-twitter"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://keybase.io/emraher" rel="me" target="_blank"> 
+<span class="menu-text"><i class="fab fa-keybase fa-lg"></i></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Eviews</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Bu kılavuz “A Guide to Using EViews with Using Econometrics: A Practical Guide” temel alınarak hazırlanmıştır.</p>
+<p><a href="../eviews/1-giris.pdf">1. Bölüm: Giriş</a></p>
+<ol type="1">
+<li>Kılavuzun Amacı</li>
+<li>EViews Yardım</li>
+<li>EViews Temelleri ve Nesneleri</li>
+<li>EViews’ta Matematiksel İfadeler</li>
+</ol>
+<p><a href="../eviews/2-ra.pdf">2. Bölüm: Regresyon Analizi</a></p>
+<ul>
+<li><a href="../eviews/HTWT1.xls">HTWT1.xls</a></li>
+<li><a href="../eviews/help1.wf1">help1.wf1</a></li>
+<li><a href="../eviews/htwt1.wf1">htwt1.wf1</a></li>
+</ul>
+<ol start="2" type="1">
+<li>Basit bir Regresyon Analizi</li>
+<li><pre><code> EViews Çalışma Dosyası Oluşturma</code></pre></li>
+<li><pre><code> EViews Çalışma Dosyasına Veri Girme</code></pre></li>
+<li><pre><code> EViews’ta Grup Oluşturma</code></pre></li>
+<li><pre><code> EViews’ta Grafik Çizme</code></pre></li>
+<li><pre><code> EViews’ta Yeni Değişken Oluşturma</code></pre></li>
+<li>Alıştırma</li>
+</ol>
+<p><a href="../eviews/3-ekk.pdf">3. Bölüm: En Küçük Kareler</a></p>
+<ul>
+<li><a href="../eviews/Beef2.xls">Beef2.xls</a></li>
+<li><a href="../eviews/Table 3.8.txt">Table 3.8.txt</a></li>
+<li><a href="../eviews/beef2.WF1">beef2.WF1</a></li>
+<li><a href="../eviews/htwt1.wf1">htwt1.wf1</a></li>
+</ul>
+<ol start="3" type="1">
+<li>Kilo/Boy Örneği için Basit bir Regresyon</li>
+<li>EViews Denklem Penceresinin İçeriği</li>
+<li>Biftek Talebi Örneği için Çalışma Dosyası Oluşturma</li>
+<li>Beef 2.xls İsimli Çalışma Sayfasından Veri Aktarma</li>
+<li>Biftek Talebi için EViews ile Çok Değişkenli Regresyon Tahmini</li>
+<li>Alıştırma</li>
+</ol>
+<p><a href="../eviews/4-rako.pdf">4. Bölüm: Regresyon Analizini Kullanmayı Öğrenme</a></p>
+<ul>
+<li><a href="../eviews/Woody3.wf1">Woody3.wf1</a></li>
+<li><a href="../eviews/Woody3.xls">Woody3.xls</a></li>
+</ul>
+<ol start="4" type="1">
+<li>Bir Grup Değişkenin Çalışma Sayfası Görüntüsünü Görüntüleme</li>
+<li>Bir Grup Değişkenin Tanımlayıcı İstatistiklerini Görüntüleme</li>
+<li>Bir Grup İçerisindeki Tüm Değişkenler Arasındaki Korelasyon Katsayılarını Görüntüleme</li>
+<li>Woody’s Restaurants Örneği için Basit Regresyon Tahmini</li>
+<li>Sonuçların Belgelenmesi</li>
+<li>Gözlenen Değerler, Tahmin Edilen Değerler, Artık Değerleri ve Artıkların Grafiğinin Gösterimi</li>
+</ol>
+<p><a href="../eviews/5-tivht.pdf">5. Bölüm: Temel İstatistikler ve Hipotez Testi</a></p>
+<ol start="5" type="1">
+<li>EKK Tahmininden t-değerinin Görüntülenmesi</li>
+<li>Kritik t-değerlerinin Hesaplanması ve Karar Kuralının Oluşturulması</li>
+<li>Güven Aralıklarının Hesaplanması</li>
+<li>Basit Korelasyon Katsayısı Üzerine t-testi Uygulanması</li>
+<li>Model Anlamlılığı için F-testi Uygulanması</li>
+</ol>
+<p><a href="../eviews/6-cb.pdf">6. Bölüm: Çoklu Bağıntı</a></p>
+<ul>
+<li><a href="../eviews/Fish8.wf1">Fish8.wf1</a></li>
+<li><a href="../eviews/Fish8.xls">Fish8.xls</a></li>
+</ul>
+<ol start="6" type="1">
+<li>Tam Çoklu Bağıntı</li>
+<li>Basit Korelasyon Katsayıları İle Çoklu Bağıntı Tespiti</li>
+<li>Varyans Şişirme Çarpanı (VIF) Hesaplanması</li>
+<li>Çoklu Bağımlı Değişkenlerin Dönüştürülmesi</li>
+</ol>
+<p><a href="../eviews/7-ab.pdf">7. Bölüm: Ardışık Bağımlılık</a></p>
+<ul>
+<li><a href="../eviews/chick6.WF1">chick6.WF1</a></li>
+<li><a href="../eviews/chick6.xls">chick6.xls</a></li>
+<li><a href="../eviews/Defend9.wf1">Defend9.wf1</a></li>
+<li><a href="../eviews/Defend9.xls">Defend9.xls</a></li>
+<li><a href="../eviews/Table 12.4.xls">Table 12.4.xls</a></li>
+<li><a href="../eviews/table124.WF1">table124.WF1</a></li>
+</ul>
+<ol start="7" type="1">
+<li>Regresyon Modelinden Artık Serileri Oluşturma</li>
+<li>Ardışık Bağımlılık Tespiti İçin Artıkların Grafiğini Çizme</li>
+<li>Regresyonu Kullanarak Birinci Sıra Ardışık Bağımlılık Katsayısını Tahmin Etme</li>
+<li>Eviews Çıktısında Durbin-Watson d İstatistiğinin Görüntülenmesi</li>
+<li>AR(1) Metoduyla Genelleştirilmiş EKK</li>
+<li>Cochrane-Orcutt Metoduyla Genelleştirilmiş EKK</li>
+</ol>
+<p><a href="../eviews/8-dv.pdf">8. Bölüm: Değişen Varyans</a></p>
+<ul>
+<li><a href="../eviews/Gas10.wf1">Gas10.wf1</a></li>
+<li><a href="../eviews/Gas10.xls">Gas10.xls</a></li>
+<li><a href="../eviews/heter.xls">heter.xls</a></li>
+</ul>
+<ol start="8" type="1">
+<li>Değişen Varyans Tespiti için Grafik Çizme</li>
+<li>Değişen Varyans Testi: Park Testi</li>
+<li>Değişen Varyans Testi: White Testi</li>
+<li>Değişen Varyans Probleminin Çözümü: Ağırlıklandırılmış EKK</li>
+<li>Değişen Varyans Probleminin Çözümü: Düzeltilmiş Standart Hatalar</li>
+<li>Değişen Varyans Probleminin Çözümü: Değişkenlerin Tekrar Tanımlanması</li>
+</ol>
+<p><a href="../eviews/9-mkdbs.pdf">9. Bölüm:&nbsp;Model Kurma: Bağımsız Değişken Seçimi</a></p>
+<ul>
+<li><a href="../eviews/chick6.WF1">chick6.WF1</a></li>
+<li><a href="../eviews/DRUGS5.WF1">DRUGS5.WF1</a></li>
+<li><a href="../eviews/Drugs5.xls">Drugs5.xls</a></li>
+<li><a href="../eviews/table62.wf1">table62.wf1</a></li>
+<li><a href="../eviews/table76.wf1">table76.wf1</a></li>
+<li><a href="../eviews/table132.wf1">table132.wf1</a></li>
+<li><a href="../eviews/Table 6.2.xls">Table 6.2.xls</a></li>
+<li><a href="../eviews/Table 7.6.xls">Table 7.6.xls</a></li>
+<li><a href="../eviews/Table 13.2.xls">Table 13.2.xls</a></li>
+</ul>
+<ol start="9" type="1">
+<li>EKK Modeline Değişken Ekleme veya Modelden Değişken Çıkarma</li>
+<li>EKK Modelinde Gecikmeli Değişkenler</li>
+<li>MWD Testi</li>
+<li>Ölçme Hatası</li>
+<li>Ölçü Birimi Değişimi</li>
+<li>Ek: İlave Belirleme Kriteri</li>
+<li>Ramsey Model Kurma Hata Testi (RESET)</li>
+<li>Ramsey Model Kurma Hata Testi (RESET) (EViews)</li>
+<li>Akaike Bilgi Kriteri (AIC) ve Schwarz Kriteri (SC) (EViews)</li>
+<li>Alıştırma</li>
+</ol>
+<p><a href="../eviews/10-mkffs.pdf">10. Bölüm: Model Kurma: Fonksiyonel Form Seçimi</a></p>
+<ul>
+<li><a href="../eviews/chick6.WF1">chick6.WF1</a></li>
+<li><a href="../eviews/CARS7.WF1">DRUGS5.WF1</a></li>
+<li><a href="../eviews/Table 12.9.xls">Table 12.9.xls</a></li>
+</ul>
+<ol start="10" type="1">
+<li><p>Fonksiyonel Form için Eviews Tablosu</p></li>
+<li><p>EViews’ta “Quasi <span class="math display">\[R^2\]</span>” Hesaplanması</p></li>
+<li><p>EViews’ta Doğrusal ve Log-Lin Modeller İçin “Quasi <span class="math display">\[R^2\]</span>” Hesaplanması</p></li>
+<li><p>EViews’ta Katsayı Kısıt Testleri</p></li>
+<li><p>Chow Yapısal Kırılma Testi</p></li>
+<li><p>Bölüm: Eşanlı Denklem Sistemleri</p></li>
+</ol>
+<ul>
+<li><a href="../eviews/hausman.WF1">hausman.WF1</a></li>
+<li><a href="../eviews/klein.wf1">klein.wf1</a></li>
+</ul>
+<ol type="1">
+<li>Eşanlı Denklem Sistemleri</li>
+<li>Ayırt Etme Problemi</li>
+<li>Sıra Koşulu</li>
+<li>Rank Koşulu</li>
+<li>Hausman Testi</li>
+<li>Dolaylı EnKüçük Kareler (DEKK)</li>
+<li>İçsel Bağıntı Sorunu</li>
+<li>Değişen Varyans Sorunu</li>
+<li>Tanımlama Hatası</li>
+<li>İki Aşamalı En Küçük Kareler (IAEKK)</li>
+<li>İçsel Bağıntı Sorunu</li>
+<li>Değişen Varyans Sorunu</li>
+<li>Tanımlama Hatası</li>
+<li>Üç Aşamalı En Küçük Kareler (UAEKK)</li>
+<li>Klein’s Model I</li>
+<li>Değişkenler ve Denklemler</li>
+<li>Yapısal Form ve İndirgenmiş Form</li>
+<li>Sıra ve Rank Koşulu</li>
+<li>EViews Tahminleri</li>
+<li>En Küçük Kareler (EKK)</li>
+<li>EKK_CS</li>
+<li>EKK_I</li>
+<li>EKK_WP</li>
+<li>İndirgenmiş Form</li>
+<li>İki Aşamalı En Küçük Kareler (IAEKK)</li>
+<li>IAEKK_CS</li>
+<li>IAEKK_I</li>
+<li>IAEKK_WP</li>
+<li>İçsel Bağıntı Testleri</li>
+<li>Durbin Watson Testi</li>
+<li>Breusch-Godfrey LM Testi</li>
+<li>Değişen Varyans Testleri</li>
+<li>White Testi</li>
+<li>Pesaran-Taylor Testi</li>
+<li>ARCH LM Testi</li>
+<li>Tanımlama Hatası Testi</li>
+<li>RESET Testi</li>
+<li>Üç Aşamalı En Küçük Kareler (UAEKK)</li>
+<li>Tam Bilgi Maksimum Olabilirlik (TBMO)</li>
+</ol>
+<p><a href="../eviews/11-eds.pdf">11. Bölüm: Eşanlı Denklem Sistemleri (Ek)</a></p>
+<ul>
+<li><a href="../eviews/macro14.xls">macro14.xls</a></li>
+<li><a href="../eviews/macro14.WF1">macro14.WF1</a></li>
+<li><a href="../eviews/fultonfish.wf1">fultonfish.wf1</a></li>
+</ul>
+<ol start="11" type="1">
+<li><p>Yapısal Denklemleri Kullanarak Vergiler ve Net İhracatın Zaman Serilerini Oluşturma</p></li>
+<li><p>EKK ile CO Tahmini</p></li>
+<li><p>EViews TSLS Metodu ile İki Aşamalı EKK Regresyon Tahmini</p></li>
+<li><p>İki Ayrı Aşamada EKK ile İki Aşamalı EKK Regresyon Tahmini</p></li>
+<li><p>EKK, TSLS ve İki Ayrı Aşamalı EKK Tahminlerinin Karşılaştırılması</p></li>
+<li><p>Ayırt Etme Sorunu ve Sıra Koşulu</p></li>
+<li><p><a href="../eviews/fulfish1.pdf">“Fulton Fish Market”</a> Örneği (İngilizce)</p></li>
+<li><p><a href="http://ideas.repec.org/p/imf/imfwpa/05-32.html">A Simultaneous Equation Model for World Crude Oil and Natural Gas Markets - IMF Working Papers 05/32</a></p></li>
+<li><p><a href="../eviews/kleinresult.pdf">Klein’s Model Tahmin Sonuçları</a></p></li>
+<li><p>Bölüm: Diğer Notlar</p></li>
+</ol>
+<ul>
+<li><a href="../eviews/heter.xls">heter.xls</a></li>
+</ul>
+<ol type="1">
+<li><a href="../eviews/veri-1959.pdf">Gujarati Otokorelasyon</a>-(Bu dosya kısmen düzensiz olduğundan bazı hatalar bulunabilir)</li>
+<li><a href="../eviews/heter.pdf">Değişen Varyans Ek</a></li>
+<li><a href="../eviews/index.pdf">Endeks Sayıları</a></li>
+</ol>
+
+
+
+</main> <!-- /main -->
+</div> <!-- /content -->
+
+
+
+
+</body></html>
