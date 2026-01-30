@@ -2,7 +2,8 @@
 title: ""
 ---
 
-I like reading interviews on [usesthis](https://usesthis.com/). From time to time my friends and colleagues also ask me what hardware and software I use. Here is my current setup.
+I enjoy reading interviews on [usesthis.com](https://usesthis.com/). Every so often, friends and colleagues ask what hardware and software I use. Below is my current setup.
+
 
 ## Hardware
 
