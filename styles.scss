@@ -1,0 +1,165 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Define families */
+$font-family-sans-serif: "Merriweather Sans", sans-serif;
+$font-family-serif: "Merriweather", serif;
+$font-family-monospace: "JetBrains Mono", monospace;
+
+/* Set defaults */
+$font-family-base: $font-family-serif;       /* Body uses Merriweather */
+$headings-font-family: $font-family-sans-serif; /* Headings use Merriweather Sans */
+
+/*-- scss:rules --*/
+
+/* Navbar fonts and colors */
+.navbar {
+  font-family: $font-family-sans-serif;
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  font-weight: 600; 
+}
+
+.navbar-brand, 
+.navbar-nav .nav-link,
+.navbar-nav .nav-link i {
+  color: #000 !important;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link:hover i {
+  color: #FF0000 !important;
+}
+
+.navbar-brand img {
+  max-height: 60px;
+  width: auto;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 700;
+}
+
+/* Headings */
+h1, .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: #000;
+}
+
+/* Body Text */
+html, body {
+  font-family: $font-family-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+}
+
+p {
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  color: #d9230f; /* A standard red, or use #FF0000 if strictly following theme.css */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF0000;
+}
+
+/* Navbar link specific overrides */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: #FF0000 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: inherit !important;
+}
+
+/* Tabset links */
+.nav-tabs .nav-link {
+    color: #000 !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    color: #FF0000 !important;
+}
+
+/* Uses page grid/cards */
+.uses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.uses-card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 0.9rem;
+}
+
+.uses-card i {
+  margin-right: 8px;
+  color: #666;
+}
+
+/* About page image */
+.about-entity img {
+  max-width: 240px; /* Adjust this value to make the image smaller or larger */
+  height: auto;
+}
+
+/* About page content */
+.quarto-about-trestles {
+  display: flex;
+  align-items: center; /* This centers the columns vertically */
+}
+
+.about-contents p {
+  font-weight: 600; 
+}
+
+/* About page links */
+.about-links .about-link {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    font-size: 1rem !important;
+    border: none !important;
+    color: #000 !important; /* Force black */
+}
+
+.about-links .about-link i {
+    color: inherit;
+}
+
+.about-links .about-link:hover,
+.about-links .about-link:hover i {
+    color: #FF0000 !important;
+}
+
+/* Code */
+pre, code, kbd, samp {
+  font-family: $font-family-monospace;
+}

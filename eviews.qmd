@@ -1,0 +1,41 @@
+---
+title: "Eviews Ders Notları"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Bu kılavuz *"A Guide to Using EViews with Using Econometrics: A Practical Guide"* temel alınarak hazırlanmıştır.
+
+### Ders Bölümleri
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/1-giris.pdf">1. Bölüm: Giriş</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/2-ra.pdf">2. Bölüm: Regresyon Analizi</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/3-ekk.pdf">3. Bölüm: En Küçük Kareler</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/4-rako.pdf">4. Bölüm: Regresyon Analizini Kullanmayı Öğrenme</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/5-tivht.pdf">5. Bölüm: Temel İstatistikler ve Hipotez Testi</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/6-cb.pdf">6. Bölüm: Çoklu Bağıntı</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/7-ab.pdf">7. Bölüm: Ardışık Bağımlılık</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/8-dv.pdf">8. Bölüm: Değişen Varyans</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/9-mkdbs.pdf">9. Bölüm: Model Kurma: Bağımsız Değişken Seçimi</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/10-mkffs.pdf">10. Bölüm: Model Kurma: Fonksiyonel Form Seçimi</a></li>
+</ul>
+
+### Eşanlı Denklem Sistemleri
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/11-eds.pdf">11. Bölüm: Eşanlı Denklem Sistemleri (Ek)</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/fulfish1.pdf">"Fulton Fish Market" Örneği (İngilizce)</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-link"></i></span><a href="http://ideas.repec.org/p/imf/imfwpa/05-32.html">A Simultaneous Equation Model for World Crude Oil and Natural Gas Markets - IMF Working Papers 05/32</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/kleinresult.pdf">Klein's Model Tahmin Sonuçları</a></li>
+</ul>
+
+### Diğer Notlar
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/veri-1959.pdf">Gujarati Otokorelasyon</a> (Bu dosya kısmen düzensiz olduğundan bazı hatalar bulunabilir)</li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/heter.pdf">Değişen Varyans Ek</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span><a href="/eviews/index.pdf">Endeks Sayıları</a></li>
+</ul>

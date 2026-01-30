@@ -1,0 +1,54 @@
+---
+title: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+I like reading interviews on [usesthis](https://usesthis.com/). From time to time my friends and colleagues also ask me what hardware and software I use. Here is my current setup.
+
+## Hardware
+
+::: {.uses-grid}
+
+::: {.uses-card}
+<i class="fa-solid fa-laptop"></i> **Computers & Displays**
+
+* [Mac Mini (2024)](https://support.apple.com/en-us/121555)
+* [MacBook Pro 15" (2018)](https://support.apple.com/kb/SP776)
+* [Lenovo Thinkpad T420](https://support.apple.com/kb/SP762)
+* [Samsung 37" ViewFinity S8](https://www.samsung.com/us/business/computing/monitors/flat/37-viewfinity-s8-s80ud-4k-uhd-hdr10-high-resolution-monitor-with-usb-c-and-ergonomic-stand-ls37d804uanxza/)
+* [Dell P2314H](https://www.amazon.com/Dell-P2314H-23-Inch-LED-Lit-Monitor/dp/B00EMB4KVS)
+* [Dell U2414H](https://www.amazon.com/Dell-UltraSharp-U2414H-Screen-Monitor/dp/B00GTV05XG)
+:::
+
+::: {.uses-card}
+<i class="fa-solid fa-keyboard"></i> **Input**
+
+* [Apple Magic Keyboard & Trackpad](https://www.apple.com/)
+* [OLKB Planck Keyboard](https://olkb.com/collections/planck)
+* [Logitech G915 TKL](https://www.logitechg.com/en-us/products/gaming-keyboards/g915-tkl-wireless.html)
+* [Logitech M570 Trackball](https://www.logitech.com/en-hk/product/wireless-trackball-m570)
+* [Corne 42 LP](https://keebmaker.com/products/corne-low-profile)
+* [8BitDo Retro Mechanical Keyboard - C64 Edition](https://www.8bitdo.com/retro-mechanical-keyboard-c64/)
+* [MCHOSE GX87](https://www.mchose.store/products/mchose-gx87-aluminum-custom-mechanical-keyboard)
+:::
+
+::: {.uses-card}
+<i class="fa-solid fa-headphones"></i> **Audio & Other**
+
+* [WA7 Fireflies Amp/DAC](https://wooaudio.com/amplifiers/wa7)
+* [Sennheiser HD650](https://en-us.sennheiser.com/high-quality-headphones-around-ear-audio-surround-hd-650)
+* [iPad Pro 10.5"](https://support.apple.com/kb/SP762)
+* [StarTech Thunderbolt 3 Dock](https://www.startech.com/en-us/cards-adapters/tb3dkdpmaw)
+* [Flexyarm 201 PRO BLACK Monitor Arm](https://www.flexyarm.com/urun/flexyarm-201-pro-black-amortisorlu-monitor-kolu)
+* [Flexyarm 201 PRO BLACK LAPTOP Monitor Arm](https://www.flexyarm.com/urun/flexyarm-201l-pro-black-amortisorlu-monitor-ve-laptop-tasima-kolu)
+:::
+
+:::
+
+## Software
+
+My primary development environment runs on macOS, managed entirely through [chezmoi](https://www.chezmoi.io/) for reproducible setup across machines. I live in [iterm](https://iterm2.com/) with [powerlevel10k](https://github.com/romkatv/powerlevel10k) giving me a clean, information-dense prompt in my Oh My Zsh shell. R is my primary statistical environment. For editing, I bounce between [Sublime Text](https://www.sublimetext.com/) and [RStudio](https://posit.co/products/open-source/rstudio/). I use [AeroSpace](https://github.com/nikitabobko/AeroSpace) for tiling window management with [JankyBorders](https://github.com/FelixKratz/JankyBorders) adding visual separation, and [Karabiner](https://karabiner-elements.pqrs.org/) plus [Hammerspoon](https://www.hammerspoon.org/) handle keyboard customization and automation. Firefox is my main browser with heavy UI customization through userChrome.css. For a complete list of software I use check my [dotfiles](https://github.com/emraher/dotfiles).
+

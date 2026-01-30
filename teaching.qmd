@@ -1,0 +1,55 @@
+---
+title: "Teaching"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+::: {.panel-tabset}
+
+## Undergraduate
+
+*   **IKT0203 - İstatistik I**
+    <br><small class="text-muted">Fall 2019, Fall 2020</small>
+
+*   **IKT0210 - İstatistik II**
+    <br><small class="text-muted">Spring 2019, Spring 2020, Spring 2021, Spring 2022, Spring 2023, Spring 2024</small>
+
+*   **PEC205 - Statistics for Social Sciences**
+    <br><small class="text-muted">Fall 2020, Fall 2021, Fall 2022, Fall 2023</small>
+
+*   **PEC206 - Introduction to Data Science**
+    <br><small class="text-muted">Spring 2021, Spring 2022, Spring 2023, Spring 2024</small>
+
+*   **IKT2016 - Matematiksel İktisat**
+    <br><small class="text-muted">Spring 2024</small>
+
+*   **IKT4007 - Ekonometri**
+    <br><small class="text-muted">Fall 2023, Fall 2024, Fall 2025</small>
+    
+*   **IKT3026 - Tarım Ekonomisi**
+    <br><small class="text-muted">Spring 2023, Spring 2024, Spring 2025</small>
+
+
+## Graduate
+
+*   **22067002 - Veri Bilimi**
+    <br><small class="text-muted">Fall 2023, Spring 2024</small>
+
+*   **22067017 - Bankacılıkta Araştırma Yöntemleri**
+    <br><small class="text-muted">Spring 2025, Fall 2025</small>
+
+*   **21005058 - İktisatta Nedensel Çıkarım I**
+    <br><small class="text-muted">Fall 2025</small>
+
+*   **21006070 - İktisatta Nedensel Çıkarım İleri Konular I**
+    <br><small class="text-muted">Fall 2025</small>
+
+*   **21005059 - Program Değerlendirmesi**
+    <br><small class="text-muted">Fall 2025</small>
+
+*   **21006071 - İleri Program Değerlendirmesi**
+    <br><small class="text-muted">Fall 2025</small>
+
+:::

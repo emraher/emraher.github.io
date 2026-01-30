@@ -1,0 +1,62 @@
+---
+title: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### R Packages
+
+::: {.uses-grid}
+
+::: {.uses-card}
+<i class="fa-brands fa-github"></i>[aqtr](https://github.com/emraher/aqtr) 
+
+Download Air Quality Data for Turkey
+:::
+
+::: {.uses-card}
+<i class="fa-brands fa-github"></i>[cbRt](https://github.com/emraher/cbRt) 
+
+Interface to EDDS of CBRT
+:::
+
+::: {.uses-card}
+<i class="fa-brands fa-github"></i>[kgsr](https://github.com/emraher/kgsr) 
+
+Download Data from KGS
+:::
+
+::: {.uses-card}
+<i class="fa-brands fa-github"></i>[rnass](https://github.com/emraher/rnass) 
+
+Interface to NASS Database
+:::
+
+
+::: {.uses-card}
+<i class="fa-brands fa-github"></i>[tuik](https://github.com/emraher/tuik) 
+
+Download TUIK Data
+:::
+
+::: {.uses-card}
+<i class="fa-brands fa-github"></i>[turkeymap](https://github.com/emraher/turkeymap)
+
+Provides City and District Data for Turkey
+:::
+
+:::
+
+### Applications
+
+::: {.uses-grid}
+
+::: {.uses-card}
+<i class="fa-solid fa-laptop-code"></i>[Farmland Values](https://github.com/emraher/Farmland_Values)
+
+Shiny App for analyzing farmland values.
+:::
+
+:::

@@ -1,3 +1,5 @@
+/.quarto/
+/_site/
 _posts/*/*.js
 _posts/*/*.html
 .DS_Store
@@ -46,3 +48,5 @@ vignettes/*.pdf
 po/*~
 .Rproj.user
 .Rdata
+
+**/*.quarto_ipynb
