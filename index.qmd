@@ -4,32 +4,32 @@ image: logo.png
 about:
   template: trestles
   links:
-    - text: '<i class="fa fa-envelope fa-lg"></i>'
+    - text: '<i class="fa-solid fa-envelope fa-lg fa-fw"></i>'
       href: "mailto:eer@eremrah.com"
       aria-label: Mail
       target: _blank
       rel: me
-    - text: '<i class="fab fa-github fa-lg"></i>'
+    - text: '<i class="fa-brands fa-github fa-lg fa-fw"></i>'
       href: "https://github.com/emraher"
       aria-label: Github
       target: _blank
       rel: me
-    - text: '<i class="fa-brands fa-bluesky"></i>'
+    - text: '<i class="fa-brands fa-bluesky fa-lg fa-fw"></i>'
       href: "https://bsky.app/profile/emraher.bsky.social"
       aria-label: Bluesky
       target: _blank
       rel: me
-    - text: '<i class="fab fa-mastodon fa-lg"></i>'
+    - text: '<i class="fa-brands fa-mastodon fa-lg fa-fw"></i>'
       href: "https://econtwitter.net/@emraher"
       aria-label: Mastodon
       target: _blank
       rel: me
-    - text: '<i class="fa-brands fa-x-twitter"></i>'
+    - text: '<i class="fa-brands fa-x-twitter fa-lg fa-fw"></i>'
       href: "https://twitter.com/emrah_er"
       aria-label: Twitter
       target: _blank
       rel: me
-    - text: '<i class="fab fa-keybase fa-lg"></i>'
+    - text: '<i class="fa-brands fa-keybase fa-lg fa-fw"></i>'
       href: "https://keybase.io/emraher"
       aria-label: Keybase
       target: _blank
