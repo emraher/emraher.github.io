@@ -6,7 +6,7 @@ I hereby claim:
 
   * I am an admin of https://eremrah.com
   * I am emraher (https://keybase.io/emraher) on keybase.
-  * I have a public key ASCc5koQFQ_6hJ7bYgFFWP3TxyCqSvIMMEYc55a3dvnMdQo
+  * I have a public key ASCk-RhavmEpULsXPODQIiA-XORhqTeTkXYTh3PKpsGo4Ao
 
 To do so, I am signing this object:
 
@@ -15,18 +15,18 @@ To do so, I am signing this object:
     "key": {
       "eldest_kid": "01209ce64a10150ffa849edb62014558fdd3c720aa4af20c30461ce796b776f9cc750a",
       "host": "keybase.io",
-      "kid": "01209ce64a10150ffa849edb62014558fdd3c720aa4af20c30461ce796b776f9cc750a",
+      "kid": "0120a4f9185abe612950bb173ce0d022203e5ce461a937939176138773caa6c1a8e00a",
       "uid": "3d3159d0c3440d50ad84824f43bc0e19",
       "username": "emraher"
     },
     "merkle_root": {
-      "ctime": 1631626858,
-      "hash": "1ec18a9a806828734a62e36ec19a350d7f91d8088c44b3d06bb9655f8a917c95d8437799344552673460179dc3a27decc358b6890439e729d5c7f3e7a275779f",
-      "hash_meta": "fb0e9e0cd487294973512e4c2a8c3d8b5dc117411ea5cf1bb93594068db308a7",
-      "seqno": 20764967
+      "ctime": 1769758227,
+      "hash": "9a566bde7fc318590e08c3bf67c8debcb40ac52011fbbbc49bd892da56a87ca3db9edc91d55664bf9f3cc76bddcae0101929ba31411a14b8f59298011d37666e",
+      "hash_meta": "8eb8e5b4c75cb81f6f6b383c8ed48753f1ab1f21d36797342dfd14339bb8a660",
+      "seqno": 27377256
     },
     "service": {
-      "entropy": "Z0sOutKytGztrIrRVG7yiwg9",
+      "entropy": "qNdhKcUjibSYB+6T5XuiCaEV",
       "hostname": "eremrah.com",
       "protocol": "https:"
     },
@@ -35,18 +35,18 @@ To do so, I am signing this object:
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "5.7.0"
+    "version": "6.5.4"
   },
-  "ctime": 1631626885,
+  "ctime": 1769758271,
   "expire_in": 504576000,
-  "prev": "c759e2058ec2ea5db9afd6bb2a2e32398e7acf1bc8eba9e9b5f8e8f084c4bf30",
-  "seqno": 19,
+  "prev": "3828c922df27a6423c1ce0032e36fc3608d2c93a24f978f2de1dd1f6da80eb6e",
+  "seqno": 37,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnOZKEBUP+oSe22IBRVj908cgqkryDDBGHOeWt3b5zHUKp3BheWxvYWTESpcCE8Qgx1niBY7C6l25r9a7Ki4yOY56zxvI66nptfjo8ITEvzDEINVJCBh2VW1lsHn/HXlSVYExa+z2Z9COB+ydlVTV3iMwAgHCo3NpZ8RAojJY+3fuRFYYR+it9Qpc9HyhPDuxOwJXcFtkiB0RSiQUCNtBmWGhCRIYCgB/c5Cv/S+bNtBA/vUf8wlAEUj7CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKs5oVg+yFxaNUuy73TZLW3rwB1HhFNCzI5Nq2RtnR6Uo3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpPkYWr5hKVC7Fzzg0CIgPlzkYak3k5F2E4dzyqbBqOAKp3BheWxvYWTESpcCJcQgOCjJIt8npkI8HOADLjb8NgjSyTok+Xjy3h3R9tqA627EIAYPmJiqUGHm0EGg0Rggm1KofpK8jouH0LhQ15VRPbGfAgHCo3NpZ8RArQwNeg7+zZgJJHgqZKhiegEio0iW2XrOFS9n4kScVtI+b84TUCUpdPGONhakNCnvPI++hiIxoyjwb5QwEoqrAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINISb3em6G4Mhhk81lcx5GTCS8BuGOqSh98wmK0awrGSo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
