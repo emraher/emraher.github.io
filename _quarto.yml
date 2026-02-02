@@ -1,7 +1,8 @@
 project:
   type: website
-  resources: 
+  resources:
     - "CNAME"
+    - "keybase.txt"
 
 website:
   site-url: "https://eremrah.com/"
