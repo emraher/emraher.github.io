@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "emraher - eviews"
 ---
 
 *"A Guide to Using EViews with Using Econometrics: A Practical Guide"* temel alınarak hazırlanmıştır.
