@@ -1,5 +1,5 @@
 ---
-title: "emraher - home"
+title: ""
 image: logo.png
 about:
   template: trestles

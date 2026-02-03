@@ -5,17 +5,19 @@ project:
     - "keybase.txt"
 
 website:
+  title: "emraher"
   site-url: "https://eremrah.com/"
   description: "emraher"
   navbar:
+    title: false
     search: false
     left:
     - text: '<i class="fa-solid fa-house fa-lg fa-fw"></i> Home'
-      href: index.qmd
+      href: home.qmd
     - text: '<i class="fa-solid fa-person-chalkboard fa-lg fa-fw"></i> Teaching'
       href: teaching.qmd
     - text: '<i class="fa-brands fa-r-project fa-lg fa-fw"></i> R'
-      href: software.qmd
+      href: r.qmd
     - text: '<i class="fa-solid fa-note-sticky fa-lg fa-fw"></i> Eviews'
       href: eviews.qmd
     - text: '<i class="fa-solid fa-toolbox fa-lg fa-fw"></i> usesthis'
