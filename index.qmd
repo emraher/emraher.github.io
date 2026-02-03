@@ -1,4 +1,5 @@
 ---
+title: "home"
 image: logo.png
 about:
   template: trestles

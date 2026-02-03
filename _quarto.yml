@@ -5,6 +5,7 @@ project:
     - "keybase.txt"
 
 website:
+  title: "Emrah Er"
   site-url: "https://eremrah.com/"
   description: "emraher"
   navbar:
