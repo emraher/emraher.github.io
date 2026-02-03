@@ -43,6 +43,11 @@ website:
       aria-label: Twitter
       target: _blank
       rel: me
+    - text: '<i class="fa-brands fa-telegram fa-lg fa-fw"></i>'
+      href: "https://t.me/emraher"
+      aria-label: Telegram
+      target: _blank
+      rel: me
     - text: '<i class="fa-brands fa-github fa-lg fa-fw"></i>'
       href: "https://github.com/emraher"
       aria-label: Github
