@@ -1,5 +1,8 @@
 ---
 title: "emraher - uses"
+format:
+  html:
+    title-block: false
 ---
 
 I enjoy reading interviews on [usesthis.com](https://usesthis.com/). Every so often, friends and colleagues ask what hardware and software I use. Below is my current setup.

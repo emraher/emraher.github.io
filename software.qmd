@@ -1,5 +1,8 @@
 ---
 title: "emraher - r"
+format:
+  html:
+    title-block: false
 ---
 
 ### R Packages

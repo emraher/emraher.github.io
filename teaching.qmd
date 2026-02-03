@@ -1,5 +1,8 @@
 ---
 title: "emraher - teaching"
+format:
+  html:
+    title-block: false
 ---
 
 ::: {.panel-tabset}
