@@ -13,7 +13,7 @@ website:
     search: false
     left:
     - text: '<i class="fa-solid fa-house fa-lg fa-fw"></i> Home'
-      href: home.qmd
+      href: index.qmd
     - text: '<i class="fa-solid fa-person-chalkboard fa-lg fa-fw"></i> Teaching'
       href: teaching.qmd
     - text: '<i class="fa-brands fa-r-project fa-lg fa-fw"></i> R'

@@ -1,9 +1,12 @@
 ---
 title: ""
-image: logo.png
+pagetitle: "home"
+format:
+  html:
+    title-block-style: none
 about:
   template: trestles
-output-file: index.html  
+image: logo.png
 ---
 
 I am an Assistant Professor in the [Department of Economics at Ankara University](http://www.politics.ankara.edu.tr/iktisat/). 
